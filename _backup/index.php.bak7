@@ -1,10 +1,4 @@
 <?php
-// La sesion se abre antes de imprimir nada: el formulario de contacto la usa
-// para guardar lo escrito y el aviso de "enviado" entre una peticion y otra.
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
 require_once __DIR__ . '/config/config.php';
 require_once __DIR__ . '/includes/functions.php';
 

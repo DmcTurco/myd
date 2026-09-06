@@ -1,16 +1,4 @@
-<?php require_once __DIR__ . '/../data/menu.php';
-
-/* Servicio que se esta viendo, para marcarlo en azul en el desplegable igual
-   que hace el original (current-menu-item / current-menu-ancestor). */
-$serv_actual = (($GLOBALS['page'] ?? '') === 'servicio') ? ($_GET['s'] ?? '') : '';
-$serv_padre  = '';
-if ($serv_actual !== '') {
-    foreach ($menu_servicios as $__ms) {
-        foreach ($__ms['hijos'] ?? [] as $__h) {
-            if ($__h['slug'] === $serv_actual) { $serv_padre = $__ms['slug']; break 2; }
-        }
-    }
-} ?>
+<?php require_once __DIR__ . '/../data/menu.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -28,7 +16,6 @@ if ($serv_actual !== '') {
     <link rel="stylesheet" href="<?= asset_v('css/hero.css') ?>">
     <link rel="stylesheet" href="<?= asset_v('css/home.css') ?>">
     <link rel="stylesheet" href="<?= asset_v('css/pages.css') ?>">
-    <link rel="stylesheet" href="<?= asset_v('css/servicio.css') ?>">
     <link rel="stylesheet" href="<?= asset_v('css/footer.css') ?>">
     <link rel="stylesheet" href="<?= asset_v('css/responsive.css') ?>">
 </head>
@@ -59,11 +46,11 @@ if ($serv_actual !== '') {
                     <ul class="dropdown">
                         <?php foreach ($menu_servicios as $ms): ?>
                         <li class="<?= !empty($ms['hijos']) ? 'has-submenu' : '' ?>">
-                            <a href="<?= servicio_url($ms['slug']) ?>" class="<?= ($ms['slug'] === $serv_actual || $ms['slug'] === $serv_padre) ? 'current' : '' ?>"><?= htmlspecialchars($ms['titulo']) ?></a>
+                            <a href="<?= servicio_url($ms['slug']) ?>"><?= htmlspecialchars($ms['titulo']) ?></a>
                             <?php if (!empty($ms['hijos'])): ?>
                             <ul class="dropdown dropdown--sub">
                                 <?php foreach ($ms['hijos'] as $h): ?>
-                                <li><a href="<?= servicio_url($h['slug']) ?>" class="<?= $h['slug'] === $serv_actual ? 'current' : '' ?>"><?= htmlspecialchars($h['titulo']) ?></a></li>
+                                <li><a href="<?= servicio_url($h['slug']) ?>"><?= htmlspecialchars($h['titulo']) ?></a></li>
                                 <?php endforeach; ?>
                             </ul>
                             <?php endif; ?>

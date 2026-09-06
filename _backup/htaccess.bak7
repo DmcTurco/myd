@@ -50,7 +50,7 @@ AddDefaultCharset UTF-8
 </FilesMatch>
 
 # Carpetas de código y datos: solo se usan desde PHP, no por URL
-RedirectMatch 404 /(config|includes|data|vendor|_logs|_tools|_backup|_wp_import)/
+RedirectMatch 404 /(config|includes|data|_backup|_wp_import)/
 
 # -------------------------------------------------------------
 #  4. Cabeceras de seguridad

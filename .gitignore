@@ -11,3 +11,10 @@ Desktop.ini
 *.swp
 .idea/
 .vscode/
+
+# Credenciales del correo: cada entorno tiene las suyas.
+# Se sube config/mail.example.php como plantilla.
+config/mail.php
+
+# Registro de los mensajes del formulario
+_logs/*.log

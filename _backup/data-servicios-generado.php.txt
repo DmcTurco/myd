@@ -243,7 +243,6 @@ $servicios_paginas = [
     'trc' => [
         'titulo'    => 'Todo Riesgo de Construcción (TRC) o Construction All Risk (CAR)',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '7395.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -279,7 +278,6 @@ $servicios_paginas = [
     'trm' => [
         'titulo'    => 'Todo Riesgo de Montaje (TRM) o Erection All Risks (EAR)',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '407.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -315,7 +313,6 @@ $servicios_paginas = [
     'trec' => [
         'titulo'    => 'Todo Riesgo de Maquinaria y/o Equipo de Contratista (TREC)',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '1598.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -356,7 +353,6 @@ $servicios_paginas = [
     'sctr' => [
         'titulo'    => 'SCTR (Salud – Pension)',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '249.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -397,7 +393,6 @@ $servicios_paginas = [
     'accidentes-personales' => [
         'titulo'    => 'Accidentes Personales',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '814.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -433,7 +428,6 @@ $servicios_paginas = [
     'vida-ley' => [
         'titulo'    => 'Vida Ley',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '15768-1.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -469,7 +463,6 @@ $servicios_paginas = [
     'eps' => [
         'titulo'    => 'EPS',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '339.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -510,7 +503,6 @@ $servicios_paginas = [
     'oncologico' => [
         'titulo'    => 'Oncologico',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '877.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -551,7 +543,6 @@ $servicios_paginas = [
     'vehicular' => [
         'titulo'    => 'Vehicular',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '17415-1.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
@@ -592,7 +583,6 @@ $servicios_paginas = [
     'soat' => [
         'titulo'    => 'SOAT DIGITAL',
         'padre'     => 'seguros-generales',
-        'migas'     => true,
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '3166.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [

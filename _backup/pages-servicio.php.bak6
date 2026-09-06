@@ -19,10 +19,11 @@ if (!$pag) {
     return;
 }
 
-// En el original la barra de migas solo sale en las 10 fichas de seguro, y
-// ademas solo con dos niveles: Home > titulo. Las otras cuatro paginas de
-// servicio no la llevan.
-$lleva_migas = !empty($pag['migas']);
+// Cadena de migas: Home > Servicios > [padre] > titulo
+$migas = [];
+if (!empty($pag['padre']) && isset($servicios_paginas[$pag['padre']])) {
+    $migas[] = ['url' => servicio_url($pag['padre']), 'txt' => $servicios_paginas[$pag['padre']]['titulo']];
+}
 
 // Fracciones de ancho -> sufijo de clase CSS
 $anchos = [
@@ -39,34 +40,27 @@ function servicio_bgpos(string $p): string
 }
 ?>
 
-<?php if ($lleva_migas): ?>
 <!-- ===== BARRA DE MIGAS ===== -->
 <section class="subheader subheader--bar">
     <div class="container">
         <nav class="breadcrumb-bar" aria-label="breadcrumb">
             <ol class="breadcrumb-list">
                 <li><a href="<?= page_url('home') ?>">Home</a></li>
+                <li><a href="<?= page_url('servicios') ?>">Servicios</a></li>
+                <?php foreach ($migas as $m): ?>
+                <li><a href="<?= $m['url'] ?>"><?= htmlspecialchars($m['txt']) ?></a></li>
+                <?php endforeach; ?>
                 <li><?= htmlspecialchars($pag['titulo']) ?></li>
             </ol>
         </nav>
     </div>
 </section>
-<?php endif; ?>
 
 <?php foreach ($pag['filas'] as $fila): ?>
 <?php
     $clases = ['vcrow'];
     $clases[] = (($fila['ancho'] ?? 'fullwidth') === 'default') ? 'vcrow--caja' : 'vcrow--full';
     if (!empty($fila['grid']))    { $clases[] = 'vcrow--grid'; }
-
-    // Fila que solo lleva el separador: se marca para poder acotarla a 1180px
-    $solo_sep = true;
-    foreach ($fila['cols'] as $c) {
-        foreach ($c['items'] ?? [] as $i) {
-            if ($i['t'] !== 'separador') { $solo_sep = false; break 2; }
-        }
-    }
-    if ($solo_sep) { $clases[] = 'vcrow--sep'; }
     if (!empty($fila['bordes']))  { $clases[] = 'vcrow--borde-' . $fila['bordes']; }
     if (!empty($fila['bg'])) {
         $clases[] = 'vcrow--foto';

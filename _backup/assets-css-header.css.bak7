@@ -104,10 +104,7 @@
     white-space: normal;
 }
 /* En el original TODOS los items llevan la linea inferior, tambien el ultimo */
-/* Azul al pasar el mouse y tambien en la pagina que se esta viendo y en su
-   padre, tal cual el original (current-menu-item / current-menu-ancestor). */
-.navbar__menu .dropdown li a:hover,
-.navbar__menu .dropdown li a.current { background: #50adef; color: #000; }
+.navbar__menu .dropdown li a:hover { background: #50adef; color: #000; }
 
 /* Marca de submenu y tercer nivel */
 .navbar__menu .dropdown .has-submenu > a::after {

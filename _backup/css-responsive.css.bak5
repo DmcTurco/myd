@@ -84,34 +84,3 @@
     .hero-v2__text-box { width: 92%; padding: 18px 20px; }
     .hero-v2__text-box p { font-size: 1.3rem; }
 }
-
-
-/* =========================================================================
-   DETALLE DE SERVICIO
-   ========================================================================= */
-@media (max-width: 991px) {
-    .vccol--1-2,
-    .vccol--1-3,
-    .vccol--2-3,
-    .vccol--1-4,
-    .vccol--3-4,
-    .vccol--1-6,
-    .vccol--5-6 { width: 50%; }
-
-    /* Sin las lineas verticales, que quedan sueltas al reacomodar */
-    .vcrow--grid .vccol + .vccol::after { display: none; }
-
-    .rt-head--style-4 .rt-title,
-    .rt-head--style-3 .rt-title { font-size: 32px; line-height: 42px; }
-}
-
-@media (max-width: 767px) {
-    .vccol { width: 100% !important; padding-top: 0 !important; }
-    .vcrow--foto .vccol { padding-top: 60px !important; padding-bottom: 60px !important; }
-    .vcrow--caja { width: 100%; }
-    .rt-head--style-4 .rt-title,
-    .rt-head--style-3 .rt-title { font-size: 24px; line-height: 32px; }
-    .rt-head--style-3::before,
-    .rt-head--style-3::after { display: none; }
-    .rt-img { margin-bottom: 20px; }
-}
