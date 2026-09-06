@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 // Honeypot anti-spam
 if (!empty($_POST['website'])) {
-    redirect(page_url('contacto') . '?enviado=1');
+    redirect(page_url('contacto') . '&enviado=1');
 }
 
 // Recoger y sanitizar
@@ -27,7 +27,7 @@ if (empty($asunto))                 $errors[] = 'Asunto requerido.';
 if (strlen($mensaje) < 10)         $errors[] = 'Mensaje muy corto.';
 
 if ($errors) {
-    redirect(page_url('contacto') . '?error=1');
+    redirect(page_url('contacto') . '&error=1');
 }
 
 // Construir email
@@ -46,7 +46,7 @@ $headers .= "X-Mailer: PHP/" . phpversion();
 $sent = mail(MAIL_TO, $subject, $body, $headers);
 
 if ($sent) {
-    redirect(page_url('contacto') . '?enviado=1');
+    redirect(page_url('contacto') . '&enviado=1');
 } else {
-    redirect(page_url('contacto') . '?error=1');
+    redirect(page_url('contacto') . '&error=1');
 }

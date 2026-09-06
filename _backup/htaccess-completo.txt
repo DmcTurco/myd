@@ -4,28 +4,31 @@
 # =============================================================
 
 Options -Indexes
+Options +FollowSymLinks
 DirectoryIndex index.php
+
 AddDefaultCharset UTF-8
 
+# -------------------------------------------------------------
+#  1. HTTPS y dominio canónico (sin www)
+#     Comenta este bloque mientras pruebes en local.
+# -------------------------------------------------------------
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # ---------------------------------------------------------
-    #  1. HTTPS y dominio canónico (sin www)
-    #     DESCOMENTA estas dos reglas al subir a producción.
-    #     Déjalas comentadas mientras pruebes en localhost.
-    # ---------------------------------------------------------
-    # RewriteCond %{HTTPS} off
-    # RewriteCond %{HTTP:X-Forwarded-Proto} !https
-    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # http -> https
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    # RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+    # www -> sin www
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
     # ---------------------------------------------------------
     #  2. URLs limpias
     #     Todo lo que no sea un archivo o carpeta real entra por
-    #     index.php, que resuelve la ruta con config/rutas.php.
+    #     index.php, que resuelve la ruta contra config/rutas.php.
     #     Se conservan las direcciones del sitio original:
     #       /nosotros/  /servicios/  /trc/  /vida-ley/
     #       /2017/11/20/la-positiva/
@@ -38,19 +41,19 @@ AddDefaultCharset UTF-8
 </IfModule>
 
 # -------------------------------------------------------------
-#  3. Archivos que nunca deben servirse
+#  3. Archivos y carpetas que nunca deben servirse
 # -------------------------------------------------------------
-<FilesMatch "\.(env|log|sql|sh|bak|bak2|bak3|bak4|json|wpress|ini|yml|yaml|md)$">
+<FilesMatch "\.(env|log|sql|sh|bak|bak2|bak3|bak4|json|wpress|md|ini|yml|yaml)$">
     Require all denied
 </FilesMatch>
 
-# Cualquier archivo que empiece por punto (.git, .env, .htaccess...)
+# Ocultar todo lo que empiece por punto (.git, .env, .htaccess...)
 <FilesMatch "^\.">
     Require all denied
 </FilesMatch>
 
-# Carpetas de código y datos: solo se usan desde PHP, no por URL
-RedirectMatch 404 /(config|includes|data|_backup|_wp_import)/
+# Carpetas de código y datos: no se entra por URL, solo desde PHP
+RedirectMatch 404 ^/(config|includes|data|_backup|_wp_import)(/|$)
 
 # -------------------------------------------------------------
 #  4. Cabeceras de seguridad
@@ -60,10 +63,11 @@ RedirectMatch 404 /(config|includes|data|_backup|_wp_import)/
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
-    # Actívala cuando confirmes que todo el sitio carga por https
+    # Descomenta cuando confirmes que todo el sitio carga por https
     # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
     Header unset X-Powered-By
 </IfModule>
+ServerSignature Off
 
 # -------------------------------------------------------------
 #  5. Compresión
@@ -79,16 +83,16 @@ RedirectMatch 404 /(config|includes|data|_backup|_wp_import)/
 # -------------------------------------------------------------
 <IfModule mod_expires.c>
     ExpiresActive On
-    ExpiresByType image/jpeg    "access plus 1 year"
-    ExpiresByType image/png     "access plus 1 year"
-    ExpiresByType image/gif     "access plus 1 year"
-    ExpiresByType image/svg+xml "access plus 1 year"
-    ExpiresByType image/x-icon  "access plus 1 year"
-    ExpiresByType font/woff2    "access plus 1 year"
-    # El CSS va con ?v=<fecha>, así que puede cachearse fuerte
-    ExpiresByType text/css                "access plus 1 month"
-    ExpiresByType application/javascript  "access plus 1 month"
-    ExpiresDefault              "access plus 2 days"
+    ExpiresByType image/jpeg        "access plus 1 year"
+    ExpiresByType image/png         "access plus 1 year"
+    ExpiresByType image/gif         "access plus 1 year"
+    ExpiresByType image/svg+xml     "access plus 1 year"
+    ExpiresByType image/x-icon      "access plus 1 year"
+    ExpiresByType font/woff2        "access plus 1 year"
+    # El CSS lleva ?v=<fecha de modificacion>, asi que puede cachearse fuerte
+    ExpiresByType text/css          "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresDefault                  "access plus 2 days"
 </IfModule>
 
 # -------------------------------------------------------------
@@ -106,3 +110,8 @@ RedirectMatch 404 /(config|includes|data|_backup|_wp_import)/
     php_flag display_errors Off
     php_flag log_errors On
 </IfModule>
+
+# -------------------------------------------------------------
+#  8. Página de error
+# -------------------------------------------------------------
+ErrorDocument 404 /index.php?ruta=404-no-existe

@@ -76,7 +76,7 @@ if ($id > 0) {
             <?php foreach ($noticias as $n): ?>
             <article class="post">
 
-                <a class="post__media" href="<?= noticia_url($n) ?>"
+                <a class="post__media" href="<?= page_url('noticias') ?>&amp;id=<?= $n['id'] ?>"
                    style="background-image:url('<?= asset('images/' . $n['imagen']) ?>')">
                     <span class="post__badge"><i class="fas fa-video"></i></span>
                 </a>
@@ -84,7 +84,7 @@ if ($id > 0) {
                 <p class="post__date"><?= htmlspecialchars($n['fecha_larga']) ?></p>
 
                 <h2 class="post__title">
-                    <a href="<?= noticia_url($n) ?>"><?= htmlspecialchars($n['titulo']) ?></a>
+                    <a href="<?= page_url('noticias') ?>&amp;id=<?= $n['id'] ?>"><?= htmlspecialchars($n['titulo']) ?></a>
                 </h2>
 
                 <p class="post__excerpt"><?= htmlspecialchars($n['resumen']) ?></p>

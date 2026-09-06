@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../data/menu.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -41,10 +42,20 @@
                 <li><a href="<?= page_url('home') ?>"      class="<?= active_page('home') ?>">Inicio</a></li>
                 <li><a href="<?= page_url('empresa') ?>"   class="<?= active_page('empresa') ?>">Nosotros</a></li>
                 <li class="has-dropdown">
-                    <a href="<?= page_url('servicios') ?>" class="<?= active_page('servicios') ?>">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <a href="<?= page_url('servicios') ?>" class="<?= active_page('servicios') ?><?= ($GLOBALS['page'] ?? '') === 'servicio' ? ' active' : '' ?>">Servicios <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown">
-                        <li><a href="<?= page_url('servicios') ?>#fianzas">Soluciones Integrales en Herramientas Financieras y Seguros <i class="fas fa-chevron-right"></i></a></li>
-                        <li><a href="<?= page_url('servicios') ?>#seguros">Seguros Generales <i class="fas fa-chevron-right"></i></a></li>
+                        <?php foreach ($menu_servicios as $ms): ?>
+                        <li class="<?= !empty($ms['hijos']) ? 'has-submenu' : '' ?>">
+                            <a href="<?= servicio_url($ms['slug']) ?>"><?= htmlspecialchars($ms['titulo']) ?></a>
+                            <?php if (!empty($ms['hijos'])): ?>
+                            <ul class="dropdown dropdown--sub">
+                                <?php foreach ($ms['hijos'] as $h): ?>
+                                <li><a href="<?= servicio_url($h['slug']) ?>"><?= htmlspecialchars($h['titulo']) ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+                            <?php endif; ?>
+                        </li>
+                        <?php endforeach; ?>
                     </ul>
                 </li>
                 <li><a href="<?= page_url('clientes') ?>"  class="<?= active_page('clientes') ?>">Clientes</a></li>

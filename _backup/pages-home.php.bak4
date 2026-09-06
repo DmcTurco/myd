@@ -140,7 +140,7 @@ function parseHomeDate(string $fecha): array {
                     <span class="home-news__my"><?= htmlspecialchars($d['mes'] . ' ' . $d['anyo']) ?></span>
                 </div>
                 <div class="home-news__body">
-                    <h4><a href="<?= noticia_url($noticia) ?>"><?= htmlspecialchars($noticia['titulo']) ?></a></h4>
+                    <h4><a href="<?= page_url('noticias') ?>&amp;id=<?= $noticia['id'] ?>"><?= htmlspecialchars($noticia['titulo']) ?></a></h4>
                     <p><?= htmlspecialchars(mb_substr($noticia['resumen'], 0, 100)) ?>...</p>
                 </div>
             </div>

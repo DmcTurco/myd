@@ -24,7 +24,7 @@ if (!isset($noticias)) {
             <h4>Últimas Noticias</h4>
             <?php foreach (array_slice($noticias, 0, 3) as $noticia): ?>
             <div class="footer__news-item">
-                <a href="<?= noticia_url($noticia) ?>">
+                <a href="<?= page_url('noticias') ?>&amp;id=<?= $noticia['id'] ?>">
                     <?= htmlspecialchars($noticia['titulo']) ?>
                 </a>
                 <span class="footer__news-date"><?= htmlspecialchars($noticia['fecha_larga']) ?></span>

@@ -1,0 +1,16 @@
+Options -Indexes
+RewriteEngine On
+
+# Forzar HTTPS en producción (descomenta en servidor real)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# URLs limpias: /servicios → index.php?page=servicios
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z\-]+)/?$ index.php?page=$1 [QSA,L]
+
+# Proteger archivos sensibles
+<FilesMatch "\.(env|log|sql|sh|json|wpress)$">
+    Require all denied
+</FilesMatch>

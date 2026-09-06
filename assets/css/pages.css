@@ -553,6 +553,46 @@
 }
 
 /* =============================================
+   FICHA DE SERVICIO / SEGURO
+     barra de migas + foto con titulo + texto + logos
+   ============================================= */
+.subheader--bar { padding-bottom: 0; }
+
+/* Estas cabeceras no llevan parallax: el original las declara con
+   rt_bg_position="center center". */
+.photo-hero--center { background-position: center center; }
+
+.serv-cuerpo .page-text { margin-bottom: 20px; }
+.serv-cuerpo .page-text:last-child { margin-bottom: 0; }
+.serv-cuerpo ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.serv-cuerpo li { font-size: 14px; line-height: 20px; color: #666; }
+
+.serv-logos {
+    background: var(--white);
+    padding: 25px 0 60px;
+}
+.serv-logos__grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 50px;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 45px;
+}
+.serv-logos__cell { flex: 0 0 auto; }
+.serv-logos__cell img {
+    max-width: 180px;
+    max-height: 90px;
+    width: auto; height: auto;
+    display: block;
+}
+
+/* =============================================
    SPLIT COLS (bloques de texto de 2 columnas — Nosotros, etc.)
    ============================================= */
 .split-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
