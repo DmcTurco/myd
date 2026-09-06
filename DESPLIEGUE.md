@@ -7,12 +7,9 @@ Todo el proyecto **menos** estas carpetas y archivos:
 | No subir | Por qué |
 |---|---|
 | `mydsac.com-*.wpress` | El respaldo de WordPress, 246 MB. Es la fuente del contenido, pero no tiene nada que hacer en el servidor. |
-| `_wp_import/` | Imágenes ya copiadas a `assets/images/`. |
-| `_backup/` | Copias de los archivos anteriores a cada cambio. |
 | `.git/` | Historial del repositorio. |
 | `DESPLIEGUE.md` | Esta nota. |
-| `_logs/` | Los mensajes que se han enviado desde tu equipo. En el servidor se crea sola. |
-| `_tools/` | Script de prueba del correo, solo para consola. |
+| `_logs/` | No existe hasta que alguien envía el formulario: se crea sola, y protegida. |
 
 Todo lo demás sí va: `index.php`, `.htaccess`, `assets/`, `config/`, `data/`,
 `includes/`, `pages/`, `actions/` y `vendor/`.
@@ -72,15 +69,15 @@ SPF del dominio y acaba en la carpeta de spam.
    'pass'  => '...',
    ```
 
-3. Pruébalo desde la consola, sin pasar por el navegador:
+3. Pruébalo enviando un mensaje desde `/contacto/`.
 
-   ```
-   cd C:\xampp\htdocs\MYD
-   C:\xampp\php\php.exe _tools\probar-correo.php
-   ```
-
-   Si falla, pon `'depurar' => true` en `config/mail.php` y vuelve a ejecutarlo:
-   la conversación completa con el servidor queda en `_logs/smtp.log`.
+   - Si llega: listo.
+   - Si sale el aviso de error, el motivo exacto queda escrito en
+     `_logs/contacto.log` (esa carpeta se crea sola al primer envío). Ábrelo por
+     FTP o por el administrador de archivos, la última línea dice qué falló.
+   - Si necesitas más detalle, pon `'depurar' => true` en `config/mail.php` y
+     vuelve a enviar: la conversación completa con el servidor queda en
+     `_logs/smtp.log`. Acuérdate de volver a ponerlo en `false` después.
 
 **Detalles que ya están resueltos:**
 
@@ -115,4 +112,4 @@ añadirla ahí.
 - Que `/config/config.php` y `/data/noticias.php` respondan 404.
 - Enviar el formulario de contacto y verificar que llega el correo a
   `informes@mydsac.com` (mira también la carpeta de spam la primera vez).
-- Que `/config/mail.php`, `/_logs/contacto.log` y `/vendor/` respondan 404.
+- Que `/config/mail.php` y `/vendor/` respondan 404, y `/_logs/contacto.log` 403.

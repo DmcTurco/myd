@@ -1,4 +1,3 @@
-# Nada de aqui se sirve por web.
 <IfModule mod_authz_core.c>
     Require all denied
 </IfModule>

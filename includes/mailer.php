@@ -41,6 +41,10 @@ function mail_log(string $archivo, string $texto): void
     $dir = __DIR__ . '/../_logs';
     if (!is_dir($dir)) {
         @mkdir($dir, 0755, true);
+        // Si la carpeta se crea sola en el servidor, que nazca protegida
+        @file_put_contents($dir . '/.htaccess',
+            "<IfModule mod_authz_core.c>\n    Require all denied\n</IfModule>\n"
+          . "<IfModule !mod_authz_core.c>\n    Order allow,deny\n    Deny from all\n</IfModule>\n");
     }
     @file_put_contents(
         $dir . '/' . $archivo,
