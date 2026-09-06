@@ -36,6 +36,9 @@
 }
 
 @media (max-width: 768px) {
+    /* En movil el logo ya trae sus 20px, pero la hamburguesa quedaria pegada
+       al borde: se le devuelve el relleno derecho a la caja de la cabecera. */
+    .navbar__inner { padding: 0 20px 0 0; }
     .navbar__toggle { display: flex; }
     .navbar__menu {
         display: none; position: absolute; top: 100%; left: 0; right: 0;

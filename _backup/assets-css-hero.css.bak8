@@ -33,8 +33,6 @@
 }
 .hero-v2__slide--active { opacity: 1; }
 
-/* El texto no aparece de golpe con la foto: se desvanece y vuelve a entrar
-   desde la derecha en cada cambio, igual que el slider del original. */
 .hero-v2__text-box {
     background: rgba(102, 20, 17, 0.75);
     border-radius: 10px;
@@ -43,28 +41,8 @@
     width: max-content;
     text-align: center;
     position: absolute; left: 50%; bottom: 19.4%;
-    transform: translateX(-50%) translateX(50px);
-    opacity: 0;
-    /* Al salir: se apaga rapido y recoloca cuando ya no se ve, para que no se
-       superponga con el texto que entra. */
-    transition: opacity .2s ease, transform 0s linear .2s;
+    transform: translateX(-50%);
     z-index: 2;
-}
-.hero-v2__slide--active .hero-v2__text-box {
-    opacity: 1;
-    transform: translateX(-50%) translateX(0);
-    /* Al entrar: espera a que el anterior se haya ido y aparece desde la derecha */
-    transition: opacity .55s ease .3s, transform .55s ease .3s;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .hero-v2__text-box,
-    .hero-v2__slide--active .hero-v2__text-box {
-        transition: none;
-        transform: translateX(-50%);
-    }
-    .hero-v2__text-box { opacity: 0; }
-    .hero-v2__slide--active .hero-v2__text-box { opacity: 1; }
 }
 .hero-v2__text-box p {
     color: var(--white);

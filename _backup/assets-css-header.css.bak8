@@ -7,23 +7,16 @@
     border-bottom: 1px solid var(--border);
     box-shadow: 0 1px 4px rgba(0,0,0,.08);
 }
-/* La cabecera no usa el ancho normal del .container: en el original la caja
-   mide 1180px justos y sin relleno lateral, de modo que el logo empieza en
-   x=383 (por su propio padding de 20px) y el menu termina pegado al borde
-   derecho de esa caja, en x=1543. */
 .navbar__inner {
     display: flex; align-items: stretch; justify-content: space-between;
     min-height: 87px;   /* +1px del borde inferior = 88px, igual que el original */
-    max-width: 1180px;
-    padding: 0;
 }
 
-/* Mismo relleno que el .site-logo del original: 18px arriba, 20px a los lados */
 .navbar__logo {
-    display: flex; align-items: flex-start; gap: .5rem;
-    padding: 18px 20px;
+    display: flex; align-items: center; gap: .5rem;
+    padding: 10px 0;
 }
-.navbar__logo img { width: 200px; height: auto; }
+.navbar__logo img { height: 42px; width: auto; }
 .navbar__logo-text {
     font-family: var(--font-heading); font-weight: 400; font-size: 1.4rem;
     color: var(--navy); letter-spacing: -.02em;

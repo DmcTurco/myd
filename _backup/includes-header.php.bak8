@@ -55,7 +55,7 @@ if ($serv_actual !== '') {
                 <li><a href="<?= page_url('home') ?>"      class="<?= active_page('home') ?>">Inicio</a></li>
                 <li><a href="<?= page_url('empresa') ?>"   class="<?= active_page('empresa') ?>">Nosotros</a></li>
                 <li class="has-dropdown">
-                    <a href="<?= page_url('servicios') ?>" class="<?= active_page('servicios') ?><?= ($GLOBALS['page'] ?? '') === 'servicio' ? ' active' : '' ?>">Servicios</a>
+                    <a href="<?= page_url('servicios') ?>" class="<?= active_page('servicios') ?><?= ($GLOBALS['page'] ?? '') === 'servicio' ? ' active' : '' ?>">Servicios <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown">
                         <?php foreach ($menu_servicios as $ms): ?>
                         <li class="<?= !empty($ms['hijos']) ? 'has-submenu' : '' ?>">
