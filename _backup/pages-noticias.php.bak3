@@ -1,7 +1,21 @@
 <?php require_once __DIR__ . '/../data/noticias.php'; ?>
 
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero" style="background-image:linear-gradient(135deg, var(--navy), var(--navy-dark))">
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+        <h1>Noticias</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="<?= page_url('home') ?>">Inicio</a></li>
+                <li>Noticias</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
 <?php
-// El id se resuelve antes de la cabecera para poder armar el breadcrumb.
+// Detalle de noticia
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $noticia_actual = null;
 if ($id > 0) {
@@ -9,32 +23,12 @@ if ($id > 0) {
         if ($n['id'] === $id) { $noticia_actual = $n; break; }
     }
 }
+
+if ($noticia_actual):
 ?>
 
-<!-- ===== SUBCABECERA — barra de breadcrumb + titulo (layout del original) ===== -->
-<section class="subheader">
-    <div class="container">
-        <nav class="breadcrumb-bar" aria-label="breadcrumb">
-            <ol class="breadcrumb-list">
-                <li><a href="<?= page_url('home') ?>">Home</a></li>
-                <?php if ($noticia_actual): ?>
-                    <li><a href="<?= page_url('noticias') ?>">M&amp;D</a></li>
-                    <li><?= htmlspecialchars($noticia_actual['titulo']) ?></li>
-                <?php else: ?>
-                    <li>Noticias</li>
-                <?php endif; ?>
-            </ol>
-        </nav>
-        <div class="page-title">
-            <h1><?= $noticia_actual ? 'Blog' : 'Noticias' ?></h1>
-        </div>
-    </div>
-</section>
-
-<?php if ($noticia_actual): ?>
-
 <!-- ===== DETALLE DE NOTICIA (layout mydsac.com) ===== -->
-<section class="section news-section">
+<section class="section">
     <div class="container">
         <article class="post post--single">
 
@@ -70,7 +64,7 @@ if ($id > 0) {
 <?php else: ?>
 
 <!-- ===== LISTADO DE NOTICIAS (layout mydsac.com) ===== -->
-<section class="section news-section">
+<section class="section">
     <div class="container">
         <div class="post-list">
             <?php foreach ($noticias as $n): ?>

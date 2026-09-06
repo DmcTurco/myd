@@ -1,20 +1,10 @@
-<!-- ===== CONTACTO GRID ===== -->
-<section class="section" style="padding-top:2.5rem;">
-    <div class="container">
-        <div class="section-header">
-            <h1>Contáctenos</h1>
-        </div>
-    </div>
-</section>
-
-<section class="section" style="padding-top:0;">
-    <div class="container contact-layout">
+<!-- ===== CONTACTO — dos columnas: formulario (357px) y oficina (743px) ===== -->
+<section class="contacto-section">
+    <div class="container contacto-grid">
 
         <!-- Formulario -->
-        <div class="contact-form-wrap">
-            <span class="section-tag">Escríbanos</span>
-            <h2>Le contestaremos en breve</h2>
-            <p>Complete el formulario y un asesor se pondrá en contacto con usted a la brevedad posible.</p>
+        <div class="contacto-form">
+            <div class="headline-wrap"><h4 class="headline-line">Escríbanos, le contestaremos en breve</h4></div>
 
             <?php if (!empty($_GET['enviado'])): ?>
             <div class="alert alert--success">
@@ -26,78 +16,54 @@
             </div>
             <?php endif; ?>
 
-            <form action="<?= SITE_URL ?>/actions/contact.php" method="POST" class="contact-form" novalidate>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="nombre">Nombres y Apellidos *</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico *</label>
-                        <input type="email" id="email" name="email" placeholder="correo@empresa.com" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
-                    </div>
-                    <div class="form-group">
-                        <label for="asunto">Asunto *</label>
-                        <input type="text" id="asunto" name="asunto" placeholder="Ej. Cartas Fianza y Pólizas de Caución" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuéntenos en qué podemos ayudarle..." required></textarea>
-                </div>
+            <form action="<?= SITE_URL ?>/actions/contact.php" method="POST" class="form-mydsac" novalidate>
+                <label for="nombre">Nombres y Apellidos:
+                    <input type="text" id="nombre" name="nombre" required>
+                </label>
+                <label for="email">Tu correo electrónico:
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="telefono">Tu Teléfono:
+                    <input type="tel" id="telefono" name="telefono">
+                </label>
+                <label for="asunto">Asunto:
+                    <input type="text" id="asunto" name="asunto" required>
+                </label>
+                <label for="mensaje">Mensaje:
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </label>
+
                 <!-- Honeypot anti-spam -->
                 <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
-                <button type="submit" class="btn btn--gray btn--block">
-                    Enviar
-                </button>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </div>
 
-        <!-- Info de contacto -->
-        <div class="contact-info">
-            <div class="contact-info__card">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                    <h4>Dirección</h4>
-                    <p><?= SITE_ADDRESS ?></p>
-                </div>
-            </div>
-            <div class="contact-info__card">
-                <i class="fas fa-phone"></i>
-                <div>
-                    <h4>Teléfono</h4>
-                    <p><a href="tel:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE) ?>"><?= SITE_PHONE ?></a></p>
-                </div>
-            </div>
-            <div class="contact-info__card">
-                <i class="fas fa-envelope"></i>
-                <div>
-                    <h4>Correo Electrónico</h4>
-                    <p><a href="mailto:<?= SITE_EMAIL ?>"><?= SITE_EMAIL ?></a></p>
-                </div>
-            </div>
-            <div class="contact-info__card">
-                <i class="fas fa-clock"></i>
-                <div>
-                    <h4>Horario de Atención</h4>
-                    <p><?= SITE_HOURS ?></p>
-                </div>
+        <!-- Oficina -->
+        <div class="contacto-oficina">
+            <div class="headline-wrap"><h4 class="headline-line">Nuestra oficina</h4></div>
+
+            <div class="contacto-map">
+                <iframe src="https://www.google.com/maps?q=-12.126175,-77.019684&amp;z=16&amp;output=embed"
+                        title="Ubicación de M&D Asesores Financieros"
+                        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <!-- Mapa -->
-            <div class="contact-map">
-                <iframe
-                    src="https://www.google.com/maps?q=-12.126175,-77.019684&z=16&output=embed"
-                    width="100%" height="250" style="border:0;border-radius:8px;" allowfullscreen
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+            <ul class="contacto-datos">
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span><?= SITE_ADDRESS ?></span>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <span><a href="tel:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE) ?>"><?= SITE_PHONE ?></a></span>
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    <span><a href="mailto:<?= SITE_EMAIL ?>"><?= SITE_EMAIL ?></a></span>
+                </li>
+            </ul>
         </div>
 
     </div>

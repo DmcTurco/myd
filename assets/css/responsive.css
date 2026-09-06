@@ -12,9 +12,17 @@
     .coverage { grid-template-columns: 1fr; }
     .post-list { gap: 40px; }
     .about-grid { grid-template-columns: 1fr; gap: 0; }
-    .serv-why__grid, .serv-cards { grid-template-columns: 1fr; }
-    .serv-hero { padding: 60px 0 80px; }
-    .serv-hero__title { font-size: 30px; line-height: 40px; }
+    .serv-why__grid, .serv-cards, .clients-grid, .comp-grid { grid-template-columns: 1fr; }
+    .contacto-grid { grid-template-columns: 1fr; }
+    .page-title { padding: 30px 0 40px; }
+    .page-title h1 { font-size: 26px; line-height: 30px; }
+    .contacto-datos span { font-size: 18px; line-height: 22px; }
+    .socios-grid { grid-template-columns: 1fr; justify-content: stretch; min-height: 0 !important; }
+    .socios-title { font-size: 30px; line-height: 40px; }
+    .photo-hero--bare { height: 190px; }
+    .clients-grid::after { display: none; }
+    .photo-hero { padding: 60px 0 80px; }
+    .photo-hero__title { font-size: 30px; line-height: 40px; }
     .serv-card figcaption { font-size: 21px; line-height: 24px; }
     .about-grid::after { display: none; }
     .page-photo { height: 240px; }

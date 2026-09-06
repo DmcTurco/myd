@@ -59,7 +59,8 @@ h1,h2,h3,h4,h5 { font-family: var(--font-heading); font-weight: 300; color: var(
 /* Ancho medido en mydsac.com: la columna de contenido es de 1130px
    (contenedor 1170 - 20px de padding a cada lado). */
 .container { width: 100%; max-width: 1170px; margin: 0 auto; padding: 0 20px; }
-.section { padding: 60px 0; }
+/* En el original las bandas de contenido son blancas sobre un body #f9f9f9. */
+.section { padding: 60px 0; background: var(--white); }
 .section--alt { background: var(--gray-light); }
 
 .section-header { text-align: center; margin-bottom: 2.5rem; }

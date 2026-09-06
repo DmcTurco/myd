@@ -40,7 +40,7 @@
 
 /* 25px arriba + 25px abajo, mas la franja vacia de 71px que el original
    deja antes del footer (total 96px de aire inferior). */
-.about-section { padding: 25px 0 96px; }
+.about-section { padding: 25px 0 96px; background: var(--white); }
 
 .about-grid {
     position: relative;
@@ -105,10 +105,12 @@
      banda gris #f4f4f4 con padding de 60px
      fichas: imagen 400x270 + titulo Oswald 26px centrado
    ============================================= */
-/* El original monta la foto en una capa parallax de 483px que arranca
-   134px mas arriba que la banda visible; sin parallax, el mismo encuadre
-   se consigue desplazando el fondo -134px. */
-.serv-hero {
+/* Cabecera con foto y titulo en caja (Servicios, Clientes, Companias).
+   El original monta la foto en una capa parallax de 483px de alto sobre
+   una banda visible de 349px, desplazada -134px (483 - 349). Por eso el
+   encuadre no arranca arriba del todo: sin parallax se reproduce con
+   background-position: 100% -134px. Es igual en las tres paginas. */
+.photo-hero {
     background-color: var(--gray-light);
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,8 +118,8 @@
     padding: 100px 0 140px;
     text-align: center;
 }
-.serv-hero__inner { text-align: center; padding-bottom: 20px; }
-.serv-hero__title {
+.photo-hero__inner { text-align: center; padding-bottom: 20px; }
+.photo-hero__title {
     display: inline-block;
     position: relative;
     background: rgba(255,255,255,.5);
@@ -131,7 +133,7 @@
     color: #222;
     text-align: center;
 }
-.serv-hero__title::after {
+.photo-hero__title::after {
     content: '';
     position: absolute;
     left: 50%; top: 100%;
@@ -141,17 +143,17 @@
 }
 
 /* --- Intro --- */
-.serv-intro { padding: 25px 0; }
-.serv-text {
+.serv-intro { padding: 25px 0; background: var(--white); }
+.page-text {
     font-size: 14px;
     line-height: 20px;
     color: #666;
 }
-.serv-text--lead { margin-bottom: 20px; }
-.serv-text strong { color: #666; font-weight: 700; }
+.page-text--lead { margin-bottom: 20px; }
+.page-text strong { color: #666; font-weight: 700; }
 
 /* --- ¿Por que trabajar con nosotros? --- */
-.serv-why { padding: 25px 0; }
+.serv-why { padding: 25px 0; background: var(--white); }
 .serv-why__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,6 +229,328 @@
     color: #222;
 }
 .serv-card--wide { margin-top: 30px; }
+
+/* =============================================
+   PAGINA CLIENTES — medidas de mydsac.com/clientes
+     mapa 550x728 a la izquierda, listado a la derecha,
+     filete vertical al medio, banda con padding de 25px
+   ============================================= */
+.clients-section { padding: 25px 0; background: var(--white); }
+.clients-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+.clients-grid::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 0; bottom: 0;
+    width: 1px;
+    background: #e8e8e8;
+}
+.clients-map img { width: 100%; height: auto; display: block; }
+
+/* =============================================
+   PAGINA COMPANIAS — medidas de mydsac.com/companias
+     intro, titulo y una rejilla de logos de 300px
+     centrados en celdas de 550px con 25px de aire
+   ============================================= */
+.comp-intro { padding: 25px 0; background: var(--white); }
+.comp-heading { padding: 25px 0; background: var(--white); }
+.comp-logos { background: var(--white); }
+.comp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;   /* celdas de 550px, como el original */
+}
+.comp-cell {
+    padding: 25px 0;
+    text-align: center;
+}
+.comp-cell img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* --- Subtitulo compartido (Clientes / Companias) --- */
+.page-subtitle {
+    position: relative;
+    font-family: var(--font-heading);
+    font-size: 22px;
+    line-height: 24.2px;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 30px;   /* 10px propios + 20px del wrapper del original */
+    padding-bottom: 10px;
+}
+.page-subtitle::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 33px;
+    width: 55px; height: 1px;
+    background: var(--navy);
+}
+.page-subtitle--plain { margin-bottom: 0; padding-bottom: 0; }
+.page-subtitle--plain::after { display: none; }
+
+.page-list { padding-left: 20px; list-style: disc; }
+.page-list li {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+
+/* =============================================
+   PAGINA SOCIOS — medidas de mydsac.com/socios
+     foto de cabecera de 270px sin titulo encima
+     titulo centrado Oswald 44px con guion de 100px
+     filas con dos columnas centradas de 260px
+   ============================================= */
+.photo-hero--bare {
+    padding: 0;
+    height: 270px;
+    background-position: 100% 0;   /* esta cabecera no lleva desfase */
+}
+
+.socios-head {
+    background: var(--white);
+    padding: 25px 0 45px;   /* 25 + los 20px del wrapper del subtitulo */
+    text-align: center;
+}
+.socios-title {
+    display: inline-block;
+    position: relative;
+    font-family: var(--font-heading);
+    font-size: 44px;
+    line-height: 59.4px;
+    font-weight: 300;
+    color: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.socios-title::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 100%;
+    margin-left: -50px;
+    width: 100px; height: 1px;
+    background: var(--navy);
+}
+/* el subtitulo va alineado a la izquierda dentro de la banda centrada */
+.socios-head .serv-band-title { text-align: left; margin-top: 20px; }
+.serv-band-title--sentence { text-transform: none; font-weight: 300; }
+
+.socios-row {
+    background: var(--white);
+    padding: 25px 0;
+}
+/* El original usa dos columnas de 290px (contenido 260 + 15px de padding
+   a cada lado) y dibuja un filete de 1px #e8e8e8 en el borde izquierdo de
+   cada columna, mas otro al cerrar la ultima. Quedan tres lineas: antes
+   del logo, entre logo y texto, y despues del texto. */
+.socios-grid {
+    display: grid;
+    grid-template-columns: 290px 290px;
+    justify-content: center;
+}
+.socios-grid > div {
+    padding: 0 15px;
+    border-left: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+}
+.socios-grid > div:last-child { border-right: 1px solid #e8e8e8; }
+
+.socios-logo { justify-content: center; }
+.socios-logo img { height: auto; display: block; }
+/* el original deja aire despues de la ultima fila (dos bandas vacias) */
+.socios-row:last-of-type { padding-bottom: 147px; }
+.socios-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    text-align: justify;
+}
+
+/* =============================================
+   PAGINA CONTACTO — medidas de mydsac.com/contacto
+     sin foto de cabecera; banda con padding de 25px
+     formulario de 357px + oficina de 743px (canal 30px)
+     etiquetas centradas en negrita, campos de 42px
+     mapa de 743x350 y datos con icono de 32px
+   ============================================= */
+.contacto-section {
+    background: var(--white);
+    /* 25px arriba; abajo se suma el aire que el original deja antes del
+       footer (su banda termina en 913 y el footer arranca en 964). */
+    padding: 25px 0 128px;
+}
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 357px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* --- Titulo con linea al costado (22px) --- */
+.headline-line {
+    display: inline-block;
+    position: relative;
+    font-family: var(--font-heading);
+    font-size: 22px;
+    line-height: 29.7px;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 30px;   /* 10px propios + 20px del wrapper del original */
+}
+.headline-line::after {
+    content: '';
+    position: absolute;
+    left: 100%; top: 15px;
+    margin-left: 20px;
+    width: 1300px; height: 5px;
+    border-top: 1px solid #e8e8e8;
+}
+/* el recorte va en el envoltorio del titulo, no en la columna:
+   si se recorta la columna se come el filete vertical de al lado */
+.headline-wrap { overflow: hidden; }
+/* El original separa las dos columnas con un filete de 1px #e8e8e8
+   colocado en x=758, con la altura de la columna de la oficina. */
+.contacto-oficina { position: relative; }
+.contacto-oficina::before {
+    content: '';
+    position: absolute;
+    left: -17px; top: 0; bottom: 0;
+    width: 1px;
+    background: #e8e8e8;
+}
+
+/* --- Formulario --- */
+.form-mydsac label {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30.8px;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 14px;   /* algo mas de aire que el original (4px) */
+}
+.form-mydsac input[type="text"],
+.form-mydsac input[type="email"],
+.form-mydsac input[type="tel"],
+.form-mydsac textarea {
+    display: block;
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: #666;
+    background: rgba(0,0,0,.02);
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    text-align: left;
+}
+.form-mydsac input[type="text"],
+.form-mydsac input[type="email"],
+.form-mydsac input[type="tel"] { height: 42px; padding: 12px 10px; }
+.form-mydsac textarea { height: 220px; padding: 11px 10px; resize: vertical; }
+.form-mydsac input:focus,
+.form-mydsac textarea:focus { outline: none; border-color: var(--sky); }
+
+.btn-enviar {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #bbbbbb;
+    color: #000;
+    border: none;
+    border-radius: 0;
+    font-family: var(--font-body);
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn-enviar:hover { background: var(--sky); color: var(--white); }
+
+/* --- Oficina --- */
+.contacto-map { height: 350px; }
+.contacto-map iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+.contacto-datos { margin-top: 15px; }
+.contacto-datos li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;   /* 46 + 18 = 64px de paso, como el original */
+}
+.contacto-datos i {
+    width: 45px;
+    flex-shrink: 0;
+    text-align: center;
+    /* Los iconos del original son de contorno y finos; los de Font Awesome
+       son solidos, asi que a 32px pesaban demasiado. */
+    font-size: 26px;
+    line-height: 46px;
+    color: #666;
+}
+.contacto-datos span {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    line-height: 24.2px;
+    font-weight: 300;
+    color: #222;
+}
+.contacto-datos a { color: inherit; }
+.contacto-datos a:hover { color: var(--sky); }
+
+/* =============================================
+   SUBCABECERA DE NOTICIAS — medidas de mydsac.com/noticias
+     banda de 196px sobre el gris del body:
+       barra de breadcrumb de 36px (#fafafa, 1180px de ancho)
+       + bloque de titulo con padding 50/70 y H1 Oswald 34px
+   ============================================= */
+.subheader { background: var(--body-bg); }
+
+/* La banda de contenido de noticias usa 25px, no los 60px de .section */
+.news-section { padding: 25px 0; }
+
+.breadcrumb-bar {
+    background: #fafafa;
+    padding: 15px 25px 10px;
+    margin: 0 -25px;          /* la barra desborda 25px a cada lado (1180px) */
+}
+.breadcrumb-list {
+    list-style: none;   /* es un <ol>: sin la numeracion */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 11px;
+    line-height: 11px;
+    color: #999;
+}
+.breadcrumb-list li:not(:last-child)::after {
+    content: '\203A';        /* chevron simple, como el separador del original */
+    margin: 0 7px;
+    color: #bbb;
+}
+.breadcrumb-list a { color: #777; }
+.breadcrumb-list a:hover { color: var(--sky); }
+
+/* El original declara padding 50/70, pero la banda de contenido que sigue
+   monta 40px encima con fondo blanco: lo que se ve son 156px de banda gris.
+   Aqui se consigue lo mismo sin solapamiento, con 23px abajo. */
+.page-title { padding: 50px 0 23px; }
+.page-title h1 {
+    font-family: var(--font-heading);
+    font-size: 34px;
+    line-height: 37.4px;
+    font-weight: 300;
+    color: #212121;
+    margin-bottom: 10px;
+}
 
 /* =============================================
    SPLIT COLS (bloques de texto de 2 columnas — Nosotros, etc.)

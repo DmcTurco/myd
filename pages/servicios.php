@@ -1,15 +1,15 @@
 <!-- ===== CABECERA — foto con el titulo en caja translucida (como el original) ===== -->
-<section class="serv-hero" style="background-image:url('<?= asset('images/hero/hero-servicios.jpg') ?>')">
-    <div class="container serv-hero__inner">
-        <h1 class="serv-hero__title">NUESTROS SERVICIOS</h1>
+<section class="photo-hero" style="background-image:url('<?= asset('images/hero/hero-servicios.jpg') ?>')">
+    <div class="container photo-hero__inner">
+        <h1 class="photo-hero__title">NUESTROS SERVICIOS</h1>
     </div>
 </section>
 
 <!-- ===== INTRO ===== -->
 <section class="serv-intro">
     <div class="container">
-        <p class="serv-text serv-text--lead">Brindamos <strong>ASESORIA ESPECIALIZADA&nbsp; EN GESTIÓN DE FIANZAS, POLIZAS DE CAUCIÓN PARA OBRAS PÚBLICAS Y PRIVADAS</strong>.</p>
-        <p class="serv-text">Trabajamos con nuestros clientes de manera personalizada, pre evaluando y diagnosticando sus estados financieros así como el back log de experiencia para lograr el éxito de la gestión, además hacemos el&nbsp; seguimiento en el transcurso de esta, comenzando por la emisión, renovación, devolución de fianza y garantías, si fuese el caso. Lo cual permitirá al cliente ahorrar tiempo y dinero, obteniendo asesoría preventiva para realizar exitosamente sus procesos en la obra.</p>
+        <p class="page-text page-text--lead">Brindamos <strong>ASESORIA ESPECIALIZADA&nbsp; EN GESTIÓN DE FIANZAS, POLIZAS DE CAUCIÓN PARA OBRAS PÚBLICAS Y PRIVADAS</strong>.</p>
+        <p class="page-text">Trabajamos con nuestros clientes de manera personalizada, pre evaluando y diagnosticando sus estados financieros así como el back log de experiencia para lograr el éxito de la gestión, además hacemos el&nbsp; seguimiento en el transcurso de esta, comenzando por la emisión, renovación, devolución de fianza y garantías, si fuese el caso. Lo cual permitirá al cliente ahorrar tiempo y dinero, obteniendo asesoría preventiva para realizar exitosamente sus procesos en la obra.</p>
     </div>
 </section>
 

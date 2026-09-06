@@ -1,61 +1,51 @@
-<!-- ===== PAGE HERO ===== -->
-<section class="page-hero" style="background-image:url('<?= asset('images/hero/hero-socios.jpg') ?>')">
-    <div class="page-hero__overlay"></div>
-    <div class="container page-hero__content">
-        <h1>Socios</h1>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li><a href="<?= page_url('home') ?>">Inicio</a></li>
-                <li>Socios</li>
-            </ol>
-        </nav>
-    </div>
-</section>
+<!-- ===== FOTO DE CABECERA (sin titulo encima, 270px como el original) ===== -->
+<section class="photo-hero photo-hero--bare" style="background-image:url('<?= asset('images/hero/hero-socios.jpg') ?>')"></section>
 
-<section class="section">
-    <div class="container" style="max-width:780px;text-align:center;">
-        <span class="section-tag">Alianzas estratégicas</span>
-        <h2>Nuestros Socios Estratégicos</h2>
-        <p>Trabajamos junto a los siguientes socios estratégicos para brindarle la misma calidad de servicio y asesoría personalizada en todo el país.</p>
-    </div>
-</section>
-
-<!-- ===== SOCIOS ESTRATÉGICOS ===== -->
-<section class="section section--alt">
+<!-- ===== TITULO ===== -->
+<section class="socios-head">
     <div class="container">
-        <div class="partner-rows">
-            <?php
-            $socios = [
-                ['nombre' => 'TM Group',                    'foto' => 'partners/tmgroup.png', 'bio' => 'Presencia estratégica en el centro del país, asegurando la misma calidad de servicio y asesoría personalizada para nuestros clientes.'],
-                ['nombre' => 'Dinamo Corredores de Seguros', 'foto' => 'partners/dinamo.png',  'bio' => 'Broker de seguros que brinda asesoría especializada en seguros generales, con la misma calidad de servicio y trato personalizado.'],
-                ['nombre' => 'Henry Leigh Riofrío',          'foto' => '',                    'bio' => 'Corredor de seguros registrado, aliado estratégico de M&D Asesores Financieros.'],
-            ];
-            foreach ($socios as $s):
-            ?>
-            <div class="partner-row">
-                <div class="partner-row__logo">
-                    <?php if ($s['foto']): ?>
-                        <img src="<?= asset('images/' . $s['foto']) ?>" alt="<?= htmlspecialchars($s['nombre']) ?>">
-                    <?php else: ?>
-                        <span class="partner-row__initial"><?= htmlspecialchars(mb_substr($s['nombre'], 0, 1)) ?></span>
-                    <?php endif; ?>
-                </div>
-                <div class="partner-row__body">
-                    <h3><?= htmlspecialchars($s['nombre']) ?></h3>
-                    <p><?= htmlspecialchars($s['bio']) ?></p>
-                </div>
-            </div>
-            <?php endforeach; ?>
-        </div>
+        <h1 class="socios-title">SOCIOS ESTRÁTEGICOS</h1>
+        <h4 class="serv-band-title serv-band-title--sentence">Trabajamos con los siguientes socios estratégicos:</h4>
     </div>
 </section>
 
-<section class="cta-banner">
-    <div class="container cta-banner__inner">
-        <div>
-            <h2>¿Le interesa ser nuestro socio estratégico?</h2>
-            <p>Escríbanos y con gusto evaluaremos una alianza.</p>
+<!-- ===== SOCIOS =====
+     El original coloca el logo y el texto en dos columnas centradas de
+     260px, y el ancho del texto acompana al de cada logo. -->
+<?php
+$socios = [
+    [
+        'logo'   => 'partners/tmgroup.png',
+        'alt'    => 'TM Group',
+        'ancho'  => 260,   // ancho con el que se muestra el logo
+        'alto'   => 260,   // alto del contenido de la fila en el original
+        'texto'  => 'Se encuentra en el centro del país donde aseguramos nuestra presencia brindando la misma calidad de servicio y asesoría personalizada.',
+    ],
+    [
+        'logo'   => 'partners/dinamo.png',
+        'alt'    => 'Dinamo Corredores de Seguros',
+        'ancho'  => 160,
+        'alto'   => 260,
+        'texto'  => 'Broker de seguros el cual brinda la asesoría en seguros generales donde brindamos la misma calidad de servicio y asesoría personalizada.',
+    ],
+    [
+        'logo'   => 'partners/leigh.jpg',
+        'alt'    => 'Corredor de seguros',
+        'ancho'  => 160,
+        'alto'   => 184,
+        'texto'  => 'Corredor de Seguros.',
+    ],
+];
+foreach ($socios as $s): ?>
+<section class="socios-row">
+    <div class="container socios-grid" style="min-height:<?= (int)$s['alto'] ?>px">
+        <div class="socios-logo">
+            <img src="<?= asset('images/' . $s['logo']) ?>" alt="<?= htmlspecialchars($s['alt']) ?>"
+                 style="width:<?= (int)$s['ancho'] ?>px">
         </div>
-        <a href="mailto:<?= SITE_EMAIL ?>" class="btn btn--white">Escríbanos</a>
+        <div class="socios-text">
+            <p><?= htmlspecialchars($s['texto']) ?></p>
+        </div>
     </div>
 </section>
+<?php endforeach; ?>
