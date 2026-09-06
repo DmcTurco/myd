@@ -313,7 +313,9 @@
 .photo-hero--bare {
     padding: 0;
     height: 270px;
-    background-position: 100% 0;   /* esta cabecera no lleva desfase */
+    /* Medido en el original: la capa del parallax mide 355px y esta subida
+       85px, asi que la foto se ve desde su pixel 85, no desde el 0. */
+    background-position: 100% -85px;
 }
 
 .socios-head {
