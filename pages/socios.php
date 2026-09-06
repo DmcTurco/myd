@@ -1,5 +1,5 @@
 <!-- ===== FOTO DE CABECERA (sin titulo encima, 270px como el original) ===== -->
-<section class="photo-hero photo-hero--bare" style="background-image:url('<?= asset('images/hero/hero-socios.jpg') ?>')"></section>
+<section class="photo-hero photo-hero--bare" style="background-image:url('<?= asset('images/hero/hero-socios.webp') ?>')"></section>
 
 <!-- ===== TITULO ===== -->
 <section class="socios-head">
@@ -15,21 +15,21 @@
 <?php
 $socios = [
     [
-        'logo'   => 'partners/tmgroup.png',
+        'logo'   => 'partners/tmgroup.webp',
         'alt'    => 'TM Group',
         'ancho'  => 260,   // ancho con el que se muestra el logo
         'alto'   => 260,   // alto del contenido de la fila en el original
         'texto'  => 'Se encuentra en el centro del país donde aseguramos nuestra presencia brindando la misma calidad de servicio y asesoría personalizada.',
     ],
     [
-        'logo'   => 'partners/dinamo.png',
+        'logo'   => 'partners/dinamo.webp',
         'alt'    => 'Dinamo Corredores de Seguros',
         'ancho'  => 160,
         'alto'   => 260,
         'texto'  => 'Broker de seguros el cual brinda la asesoría en seguros generales donde brindamos la misma calidad de servicio y asesoría personalizada.',
     ],
     [
-        'logo'   => 'partners/leigh.jpg',
+        'logo'   => 'partners/leigh.webp',
         'alt'    => 'Corredor de seguros',
         'ancho'  => 160,
         'alto'   => 184,

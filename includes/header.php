@@ -39,7 +39,7 @@ if ($serv_actual !== '') {
     <div class="container navbar__inner">
         <!-- Logo -->
         <a href="<?= page_url('home') ?>" class="navbar__logo">
-            <img src="<?= asset('images/logo.png') ?>" alt="M&D Asesoría Financiera"
+            <img src="<?= asset('images/logo.webp') ?>" alt="M&D Asesoría Financiera"
                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <span class="navbar__logo-text" style="display:none;">M<strong>&D</strong> <small style="font-size:.6em;font-weight:400;letter-spacing:.02em;color:#555;margin-left:4px;">Asesoría Financiera</small></span>
         </a>

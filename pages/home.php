@@ -3,11 +3,11 @@ require_once __DIR__ . '/../data/noticias.php';
 
 // Compañías para el carrusel de inicio
 $companias_home = [
-    ['nombre' => 'La Positiva Seguros',        'logo' => 'positiva.png'],
-    ['nombre' => 'AVLA',                       'logo' => 'avla.png'],
-    ['nombre' => 'SECREX CESCE',                'logo' => 'secrex.png'],
-    ['nombre' => 'AmTrust Insurance Spain',    'logo' => 'amtrust.png'],
-    ['nombre' => 'InSur — Partner of Atradius','logo' => 'insur-atradius.png'],
+    ['nombre' => 'La Positiva Seguros',        'logo' => 'positiva.webp'],
+    ['nombre' => 'AVLA',                       'logo' => 'avla.webp'],
+    ['nombre' => 'SECREX CESCE',                'logo' => 'secrex.webp'],
+    ['nombre' => 'AmTrust Insurance Spain',    'logo' => 'amtrust.webp'],
+    ['nombre' => 'InSur — Partner of Atradius','logo' => 'insur-atradius.webp'],
 ];
 
 // Parsear fecha al formato: día / "Mes AA"
@@ -35,37 +35,37 @@ function parseHomeDate(string $fecha): array {
 <section class="hero-v2">
     <div class="hero-v2__slider" id="heroSlider">
 
-        <div class="hero-v2__slide hero-v2__slide--active" style="background-image:url('<?= asset('images/hero/inicio-1.jpg') ?>')">
+        <div class="hero-v2__slide hero-v2__slide--active" style="background-image:url('<?= asset('images/hero/inicio-1.webp') ?>')">
             <div class="hero-v2__text-box">
                 <p>Experiencia, Calidad y Compromiso a la medida de las necesidades de nuestros clientes.</p>
             </div>
         </div>
 
-        <div class="hero-v2__slide" style="background-image:url('<?= asset('images/hero/inicio-2.jpg') ?>')">
+        <div class="hero-v2__slide" data-bg="<?= asset('images/hero/inicio-2.webp') ?>">
             <div class="hero-v2__text-box">
                 <p>Promover el éxito de nuestros clientes</p>
             </div>
         </div>
 
-        <div class="hero-v2__slide" style="background-image:url('<?= asset('images/hero/inicio-3.jpg') ?>')">
+        <div class="hero-v2__slide" data-bg="<?= asset('images/hero/inicio-3.webp') ?>">
             <div class="hero-v2__text-box">
                 <p>Cartas Fianza, Seguros de Caución y Seguros Generales</p>
             </div>
         </div>
 
-        <div class="hero-v2__slide" style="background-image:url('<?= asset('images/hero/inicio-4.jpg') ?>')">
+        <div class="hero-v2__slide" data-bg="<?= asset('images/hero/inicio-4.webp') ?>">
             <div class="hero-v2__text-box">
                 <p>Trabajamos&nbsp; de manera personalizada</p>
             </div>
         </div>
 
-        <div class="hero-v2__slide" style="background-image:url('<?= asset('images/hero/inicio-5.jpg') ?>')">
+        <div class="hero-v2__slide" data-bg="<?= asset('images/hero/inicio-5.webp') ?>">
             <div class="hero-v2__text-box">
                 <p>Rapidez y confiabilidad en la gestión de Fianzas</p>
             </div>
         </div>
 
-        <div class="hero-v2__slide" style="background-image:url('<?= asset('images/hero/inicio-6.jpg') ?>')">
+        <div class="hero-v2__slide" data-bg="<?= asset('images/hero/inicio-6.webp') ?>">
             <div class="hero-v2__text-box">
                 <p>Tener un buen respaldo es nuestra mejor garantía.</p>
             </div>

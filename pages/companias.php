@@ -1,5 +1,5 @@
 <!-- ===== CABECERA — foto con el titulo en caja translucida ===== -->
-<section class="photo-hero" style="background-image:url('<?= asset('images/hero/hero-companias.jpg') ?>')">
+<section class="photo-hero" style="background-image:url('<?= asset('images/hero/hero-companias.webp') ?>')">
     <div class="container photo-hero__inner">
         <h1 class="photo-hero__title">COMPAÑIAS</h1>
     </div>
@@ -24,11 +24,11 @@
         <?php
         // Mismo orden que el sitio original: AVLA, SECREX, AmTrust, La Positiva, InSur.
         $partners = [
-            ['nombre' => 'AVLA',                        'logo' => 'avla.png'],
-            ['nombre' => 'SECREX CESCE',                'logo' => 'secrex.png'],
-            ['nombre' => 'AmTrust Insurance Spain',     'logo' => 'amtrust.png'],
-            ['nombre' => 'La Positiva Seguros',         'logo' => 'positiva.png'],
-            ['nombre' => 'InSur — Partner of Atradius', 'logo' => 'insur-atradius.png'],
+            ['nombre' => 'AVLA',                        'logo' => 'avla.webp'],
+            ['nombre' => 'SECREX CESCE',                'logo' => 'secrex.webp'],
+            ['nombre' => 'AmTrust Insurance Spain',     'logo' => 'amtrust.webp'],
+            ['nombre' => 'La Positiva Seguros',         'logo' => 'positiva.webp'],
+            ['nombre' => 'InSur — Partner of Atradius', 'logo' => 'insur-atradius.webp'],
         ];
         foreach ($partners as $p): ?>
         <div class="comp-cell">

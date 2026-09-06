@@ -1,7 +1,7 @@
 <!-- ===== FOTO DE CABECERA =====
      El original no pone franja oscura, titulo ni breadcrumb aqui:
      solo la foto de la oficina a todo el ancho, de 370px de alto. -->
-<section class="page-photo" style="background-image:url('<?= asset('images/hero/hero-empresa.jpg') ?>')"></section>
+<section class="page-photo" style="background-image:url('<?= asset('images/hero/hero-empresa.webp') ?>')"></section>
 
 <!-- ===== ¿QUIÉNES SOMOS? / COMPROMISO | MISIÓN / VISIÓN =====
      Dos columnas de 550px separadas por un filete vertical, con los

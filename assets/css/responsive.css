@@ -59,8 +59,18 @@
     }
     .has-dropdown .dropdown { display: none !important; }
 
-    .hero-v2 { min-height: 420px; }
-    .hero-v2__slide { padding-bottom: 15%; }
+    /* Las fotos del carrusel son panoramicas (mas o menos 2:1). Si el hero
+       ocupa toda la altura de un movil en vertical, `cover` tiene que ampliar
+       la foto unas cuatro veces y solo se ve una franja diminuta del centro,
+       borrosa. Se le da al hero una proporcion parecida a la de la foto para
+       que se vea casi entera. */
+    .home-hero-block { min-height: 0; }
+    .hero-v2 {
+        flex: 0 0 auto;
+        min-height: 260px;
+        aspect-ratio: 3 / 2;
+    }
+    .hero-v2__slide { padding-bottom: 0; }
     .hero-v2__text-box { width: 85%; padding: 24px; }
     .hero-v2__text-box p { font-size: 1.7rem; }
 
@@ -83,6 +93,10 @@
 }
 
 @media (max-width: 480px) {
+    /* Cuanto mas estrecha la pantalla, mas alto tiene que ser el hero para
+       que quepa el texto sin comerse la foto. */
+    .hero-v2 { aspect-ratio: 4 / 3; }
+
     .page-hero__content h1 { font-size: 1.6rem; }
     .hero-v2__text-box { width: 92%; padding: 18px 20px; }
     .hero-v2__text-box p { font-size: 1.3rem; }

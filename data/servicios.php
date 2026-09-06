@@ -19,7 +19,7 @@ $servicios_paginas = [
         'titulo'    => 'SOLUCIONES INTEGRALES EN HERRAMIENTAS FINANCIERAS Y SEGUROS',
         'padre'     => null,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '19.jpg', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '19.webp', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-1', 'txt' => '' ],
                 ] ],
@@ -40,19 +40,19 @@ $servicios_paginas = [
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/6' ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania1.png' ],
+                    [ 't' => 'imagen', 'src' => 'Compania1.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente4.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'cliente4.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'cliente1.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania5_2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania5_2.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania6_2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania6_2.webp' ],
                 ] ],
             ] ],
         ],
@@ -61,7 +61,7 @@ $servicios_paginas = [
         'titulo'    => 'Gestión para Apertura y Aumento de Línea de Crédito para las Cartas Fianzas',
         'padre'     => 'soluciones-integrales',
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '308.jpg', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '308.webp', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'punchline' => 'Nuestros Servicios', 'txt' => 'Gestión para apertura y aumento de línea de crédito para las cartas fianzas' ],
                 ] ],
@@ -73,7 +73,7 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'fullwidth', 'grid' => true, 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/2', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'DSC_0291.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'DSC_0291.webp' ],
                 ] ],
                 [ 'w' => '1/2', 'items' => [
                     [ 't' => 'heading', 'size' => 'h4', 'estilo' => 'style-1', 'txt' => 'Beneficios:' ],
@@ -88,19 +88,19 @@ $servicios_paginas = [
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/6' ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania1.png' ],
+                    [ 't' => 'imagen', 'src' => 'Compania1.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente4.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'cliente4.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'cliente1.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania5_2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania5_2.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania6_2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania6_2.webp' ],
                 ] ],
             ] ],
         ],
@@ -109,7 +109,7 @@ $servicios_paginas = [
         'titulo'    => 'Gestión de Cartas Fianzas para Obras Públicas y Privadas',
         'padre'     => 'soluciones-integrales',
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '14851.jpg', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '14851.webp', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => 'Gestión de Cartas Fianzas para Obras Públicas y Privadas' ],
                 ] ],
@@ -121,7 +121,7 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'fullwidth', 'grid' => true, 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/2', 'items' => [
-                    [ 't' => 'imagen', 'src' => '7395.jpg' ],
+                    [ 't' => 'imagen', 'src' => '7395.webp' ],
                 ] ],
                 [ 'w' => '1/2', 'items' => [
                     [ 't' => 'heading', 'size' => 'h4', 'estilo' => 'style-1', 'txt' => 'Beneficios:' ],
@@ -136,19 +136,19 @@ $servicios_paginas = [
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/6' ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania1.png' ],
+                    [ 't' => 'imagen', 'src' => 'Compania1.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente4.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'cliente4.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'cliente1.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania5_2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania5_2.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania6_2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania6_2.webp' ],
                 ] ],
             ] ],
         ],
@@ -157,7 +157,7 @@ $servicios_paginas = [
         'titulo'    => 'SEGUROS GENERALES',
         'padre'     => null,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => 'EstrecharMano-2.jpg', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => 'EstrecharMano-2.webp', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-1', 'txt' => '' ],
                 ] ],
@@ -175,47 +175,47 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'fullwidth', 'grid' => true, 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'trc.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'trc.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">Todo Riesgo de Construcción (TRC) o Construction All Risk (CAR)</p>' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'TRM.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'TRM.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">Todo Riesgo de Montaje (TRM) o Erection All Risks (EAR)</p>' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'trec_2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'trec_2.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">Todo Riesgo de Maquinaria y/o Equipo de Contratista (TREC)</p>' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'TREC-3.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'TREC-3.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">SCTR (Salud - Pension)</p>' ],
                 ] ],
             ] ],
             [ 'ancho' => 'fullwidth', 'grid' => true, 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'accidentespersonales.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'accidentespersonales.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">Accidentes Personales</p>' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'vida-ley_9.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'vida-ley_9.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">Vida Ley</p>' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'EPS_3.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'EPS_3.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;"> EPS</p>' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'ONCOLOGICO_3.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'ONCOLOGICO_3.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">Oncologico</p>' ],
                 ] ],
             ] ],
             [ 'ancho' => 'fullwidth', 'grid' => true, 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'VEHICULAR_2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'VEHICULAR_2.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">Vehicular</p>' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'SOAT.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'SOAT.webp' ],
                     [ 't' => 'texto', 'html' => '<p style="text-align: center;">SOAT DIGITAL</p>' ],
                 ] ],
             ] ],
@@ -226,16 +226,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
         ],
@@ -245,7 +245,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '7395.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '7395.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>Todo Riesgo de Construcción (TRC) o Construction All Risk (CAR)</strong>' ],
                 ] ],
@@ -262,16 +262,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
         ],
@@ -281,7 +281,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '407.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '407.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>Todo Riesgo de Montaje (TRM) o Erection All Risks (EAR)</strong>' ],
                 ] ],
@@ -298,16 +298,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
         ],
@@ -317,7 +317,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '1598.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '1598.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>Todo Riesgo de Maquinaria y/o Equipo de Contratista (TREC)</strong>' ],
                 ] ],
@@ -334,16 +334,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
@@ -358,7 +358,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '249.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '249.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>SCTR (Salud – Pension)</strong>' ],
                 ] ],
@@ -375,16 +375,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
@@ -399,7 +399,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '814.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '814.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>Accidentes Personales</strong>' ],
                 ] ],
@@ -416,16 +416,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
         ],
@@ -435,7 +435,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '15768-1.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '15768-1.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>Vida Ley</strong>' ],
                 ] ],
@@ -452,16 +452,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
         ],
@@ -471,7 +471,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '339.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '339.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>EPS</strong>' ],
                 ] ],
@@ -488,16 +488,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
@@ -512,7 +512,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '877.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '877.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>Oncologico</strong>' ],
                 ] ],
@@ -529,16 +529,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
@@ -553,7 +553,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '17415-1.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '17415-1.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>Vehicular</strong>' ],
                 ] ],
@@ -570,16 +570,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
@@ -594,7 +594,7 @@ $servicios_paginas = [
         'padre'     => 'seguros-generales',
         'migas'     => true,
         'filas'     => [
-            [ 'ancho' => 'fullwidth', 'bg' => '3166.jpg', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
+            [ 'ancho' => 'fullwidth', 'bg' => '3166.webp', 'bgpos' => 'center center', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'pt' => 100, 'pb' => 140, 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => '<strong>SOAT DIGITAL</strong>' ],
                 ] ],
@@ -611,16 +611,16 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania8.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania8.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania7.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Compania7.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'Icono_SegGeneral-1.webp' ],
                 ] ],
                 [ 'w' => '1/4', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.jpg' ],
+                    [ 't' => 'imagen', 'src' => 'IconoPosit_SegGeneral-2.webp' ],
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [

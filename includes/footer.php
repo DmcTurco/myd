@@ -12,7 +12,7 @@ if (!isset($noticias)) {
         <div>
             <span class="footer__brand-title">M&amp;D Asesores Financieros</span>
             <div class="footer__logo">
-                <img src="<?= asset('images/logo-white.png') ?>" alt="M&D Asesoría Financiera"
+                <img src="<?= asset('images/logo-white.webp') ?>" alt="M&D Asesoría Financiera"
                      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
                 <span class="footer__logo-text" style="display:none;">M<strong>&D</strong></span>
             </div>
@@ -67,10 +67,10 @@ if (!isset($noticias)) {
     </div>
 </footer>
 
-<script src="<?= asset('js/navbar.js') ?>"></script>
-<script src="<?= asset('js/hero-slider.js') ?>"></script>
-<script src="<?= asset('js/companies-carousel.js') ?>"></script>
-<script src="<?= asset('js/form-validation.js') ?>"></script>
-<script src="<?= asset('js/main.js') ?>"></script>
+<script src="<?= asset_v('js/navbar.js') ?>"></script>
+<script src="<?= asset_v('js/hero-slider.js') ?>"></script>
+<script src="<?= asset_v('js/companies-carousel.js') ?>"></script>
+<script src="<?= asset_v('js/form-validation.js') ?>"></script>
+<script src="<?= asset_v('js/main.js') ?>"></script>
 </body>
 </html>
