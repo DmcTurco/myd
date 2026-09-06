@@ -1,0 +1,111 @@
+/* =============================================
+   FOOTER — 3 columnas estilo mydsac.com
+   ============================================= */
+/* Original: seccion con padding 40px 0 + caja interior con padding 25px,
+   y barra de copyright de 71px. */
+.footer {
+    background: #084672;
+    color: rgba(255,255,255,.8);
+    padding: 65px 0 0;
+}
+/* Original: 3 columnas iguales de 357px de contenido con 30px de canal. */
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+/* Logo col */
+.footer__brand-title {
+    font-family: var(--font-heading);
+    font-size: 1.0625rem; font-weight: 300;
+    color: var(--white);
+    margin-bottom: 14px;
+    display: block;
+    text-transform: none;
+    letter-spacing: normal;
+}
+.footer__logo { margin-bottom: 16px; }
+.footer__logo img { max-height: 56px; filter: brightness(0) invert(1); }
+.footer__logo-text {
+    font-family: var(--font-heading); font-size: 1.6rem;
+    color: var(--white); letter-spacing: -.02em;
+}
+.footer__logo-text strong { color: var(--sky); }
+.footer__brand-desc {
+    font-size: 14px; color: rgba(255,255,255,.7);
+    line-height: 20px; margin-bottom: 0;
+}
+
+/* Columns */
+.footer__col {
+    border-left: 1px solid rgba(255,255,255,.15);
+    padding-left: 15px;
+}
+.footer__col h4 {
+    font-family: var(--font-heading);
+    font-size: 17px; line-height: 18.7px;
+    color: var(--white);
+    margin-bottom: 10px; padding-bottom: 10px;
+    font-weight: 300;
+}
+
+/* News col */
+/* El original separa las noticias solo con 15px, sin filete. */
+.footer__news-item { margin-bottom: 15px; }
+.footer__news-item:last-child { margin-bottom: 0; }
+.footer__news-item a {
+    display: block; font-size: 14px; line-height: 20px; font-weight: 400;
+    color: #aeaeae; margin-bottom: 2px;
+    transition: var(--transition);
+}
+.footer__news-item a:hover { color: var(--white); }
+.footer__news-date {
+    display: block;
+    font-size: .69rem; color: #eaeaea;
+    margin-bottom: 4px;
+}
+.footer__news-excerpt {
+    display: block;
+    font-size: 14px; line-height: 20px;
+    color: rgba(255,255,255,.95);
+    margin-top: 2px;
+}
+.footer__hours {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.15);
+    font-size: 14px; line-height: 20px;
+    color: var(--white);
+    line-height: 1.7;
+}
+
+/* Contact col */
+.footer__contact-list { display: flex; flex-direction: column; gap: 10px; }
+.footer__contact-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14px; line-height: 20px; color: rgba(255,255,255,.75);
+}
+.footer__contact-item i { color: var(--white); flex-shrink: 0; margin-top: 3px; font-size: 14px; }
+.footer__contact-item a { color: rgba(255,255,255,.75); transition: var(--transition); }
+.footer__contact-item a:hover { color: var(--sky); }
+
+.footer__bottom {
+    margin-top: 65px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding: 25px 0;
+    text-align: center;
+}
+.footer__bottom p {
+    font-size: .8rem;
+    color: rgba(255,255,255,.45);
+}
+
+/* =============================================
+   CTA BANNER (para otras páginas)
+   ============================================= */
+.cta-banner { background: var(--navy); padding: 50px 0; }
+.cta-banner__inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.cta-banner h2 { color: var(--white); font-size: 1.6rem; margin-bottom: .4rem; }
+.cta-banner p { color: rgba(255,255,255,.8); }
+

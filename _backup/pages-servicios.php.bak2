@@ -1,0 +1,155 @@
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero page-hero--light" style="background-image:url('<?= asset('images/hero/hero-servicios.jpg') ?>')">
+    <div class="page-hero__overlay page-hero__overlay--light"></div>
+    <div class="container page-hero__content">
+        <div class="page-hero__box">
+            <h1>Servicios</h1>
+        </div>
+    </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="section">
+    <div class="container" style="max-width:780px;text-align:center;">
+        <span class="section-tag">Lo que ofrecemos</span>
+        <h2>Soluciones Financieras Integrales</h2>
+        <p>Brindamos <strong>asesoría especializada en gestión de fianzas y pólizas de caución para obras públicas y privadas</strong>. Trabajamos con nuestros clientes de manera personalizada, evaluando y diagnosticando sus estados financieros así como su historial de experiencia para lograr el éxito de la gestión — con seguimiento desde la emisión hasta la renovación y devolución de la garantía.</p>
+    </div>
+</section>
+
+<!-- ===== ¿POR QUÉ TRABAJAR CON NOSOTROS? ===== -->
+<section class="section section--alt">
+    <div class="container why-us">
+        <div class="why-us__image">
+            <img src="<?= asset('images/about-team.jpg') ?>" alt="Equipo M&D Asesores Financieros" onerror="this.parentElement.style.background='#e8eef5'">
+        </div>
+        <div class="why-us__content">
+            <h2>¿Por qué trabajar con nosotros?</h2>
+            <ul class="why-us__list">
+                <li>Brindamos asesoría antes y después de la emisión de la fianza.</li>
+                <li>Gestionamos fianzas con garantías de cheques diferidos que van de 0 a 20%.</li>
+                <li>Rapidez y confiabilidad en la aprobación de líneas de fianzas, debido a nuestra pre evaluación, antes de llegar a la entidad financiera.</li>
+                <li>Crecimiento de línea de fianzas.</li>
+                <li>Tasas competitivas.</li>
+                <li>Atendemos los requerimientos de los clientes a nivel nacional.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICIOS — TARJETAS ===== -->
+<section class="section">
+    <div class="container">
+        <div class="service-cards">
+            <a href="#fianzas" class="service-card">
+                <div class="service-card__img" style="background-image:url('<?= asset('images/hero/hero-servicios.jpg') ?>')"></div>
+                <h3>Gestión para Apertura y Aumento de Línea de Crédito para las Cartas Fianzas</h3>
+            </a>
+            <a href="#obras" class="service-card">
+                <div class="service-card__img" style="background-image:url('<?= asset('images/hero/hero-companias.jpg') ?>')"></div>
+                <h3>Gestión de Cartas Fianzas para Obras Públicas y Privadas</h3>
+            </a>
+            <a href="#seguros" class="service-card">
+                <div class="service-card__img" style="background-image:url('<?= asset('images/hero/hero-socios.jpg') ?>')"></div>
+                <h3>Seguros Generales</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== DETALLE: CARTAS FIANZA ===== -->
+<section class="section section--alt" id="fianzas">
+    <div class="container split-cols">
+        <div class="split-cols__col">
+            <div class="text-block">
+                <h2>Cartas Fianza y Pólizas de Caución</h2>
+                <p>Gestionamos todo el proceso para la apertura y aumento de líneas de crédito, así como la tramitación de cartas fianza para obras públicas (licitaciones, SEACE) y privadas.</p>
+            </div>
+        </div>
+        <div class="split-cols__col">
+            <div class="text-block">
+                <h2>¿Qué incluye?</h2>
+                <ul class="plain-list">
+                    <li>Evaluación previa de estados financieros</li>
+                    <li>Gestión de apertura y aumento de línea de crédito</li>
+                    <li>Tramitación de cartas fianza para obras públicas y privadas</li>
+                    <li>Garantías con cheques diferidos (0–20%)</li>
+                    <li>Seguimiento desde emisión hasta devolución de garantías</li>
+                    <li>Tasas competitivas con aprobación rápida</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:2rem;">
+        <a href="<?= page_url('contacto') ?>" class="btn btn--primary" id="obras">Solicitar información</a>
+    </div>
+</section>
+
+<!-- ===== DETALLE: SEGUROS GENERALES ===== -->
+<section class="section" id="seguros">
+    <div class="container split-cols">
+        <div class="split-cols__col">
+            <div class="text-block">
+                <h2>Seguros Generales</h2>
+                <p>Ofrecemos una amplia gama de seguros corporativos y personales a través de las mejores compañías aseguradoras del mercado peruano.</p>
+            </div>
+        </div>
+        <div class="split-cols__col">
+            <div class="text-block">
+                <h2>Tipos de seguros</h2>
+                <ul class="plain-list plain-list--cols">
+                    <li>TRC (Todo Riesgo Construcción)</li>
+                    <li>TRM (Todo Riesgo Montaje)</li>
+                    <li>TREC (Todo Riesgo Equipo Contratista)</li>
+                    <li>SCTR (Seguro Complementario de Trabajo de Riesgo)</li>
+                    <li>Accidentes Personales</li>
+                    <li>Vida Ley</li>
+                    <li>EPS (Entidad Prestadora de Salud)</li>
+                    <li>Seguro Oncológico</li>
+                    <li>Seguro Vehicular</li>
+                    <li>SOAT Digital</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:2rem;">
+        <a href="<?= page_url('contacto') ?>" class="btn btn--primary">Solicitar cotización</a>
+    </div>
+</section>
+
+<!-- ===== DETALLE: SERVICIOS ADMINISTRATIVOS ===== -->
+<section class="section section--alt" id="administrativos">
+    <div class="container split-cols">
+        <div class="split-cols__col">
+            <div class="text-block">
+                <h2>Servicios Administrativos</h2>
+                <p>Complementamos nuestra oferta con servicios administrativos que facilitan la gestión empresarial del día a día.</p>
+            </div>
+        </div>
+        <div class="split-cols__col">
+            <div class="text-block">
+                <h2>Incluye</h2>
+                <ul class="plain-list">
+                    <li>SOAT Digital — tramitación rápida y sin filas</li>
+                    <li>Asesoría administrativa integral</li>
+                    <li>Gestión documental y seguimiento de trámites</li>
+                    <li>Consultoría en gestión de riesgos corporativos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:2rem;">
+        <a href="<?= page_url('contacto') ?>" class="btn btn--primary">Solicitar información</a>
+    </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-banner">
+    <div class="container cta-banner__inner">
+        <div>
+            <h2>¿Listo para proteger su empresa?</h2>
+            <p>Contáctenos y reciba una asesoría personalizada sin costo.</p>
+        </div>
+        <a href="<?= page_url('contacto') ?>" class="btn btn--white">Hablar con un asesor</a>
+    </div>
+</section>

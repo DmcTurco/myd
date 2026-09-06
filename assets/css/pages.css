@@ -1,0 +1,467 @@
+/* =============================================
+   PAGE HERO (inner pages)
+   ============================================= */
+.page-hero {
+    position: relative; height: 280px;
+    background: var(--navy-dark) center/cover no-repeat;
+    display: flex; align-items: center;
+}
+.page-hero__overlay { position: absolute; inset: 0; background: rgba(10,25,50,.7); }
+.page-hero__content { position: relative; z-index: 1; }
+.page-hero__content h1 { color: var(--white); font-size: 2.2rem; margin-bottom: .6rem; }
+.breadcrumb { display: flex; gap: .5rem; align-items: center; color: rgba(255,255,255,.7); font-size: .82rem; }
+.breadcrumb li:not(:last-child)::after { content: '/'; margin-left: .5rem; }
+.breadcrumb a { color: var(--sky); }
+
+/* Variante clara: caja translúcida en vez de overlay oscuro + breadcrumb */
+.page-hero--light { height: 220px; }
+.page-hero__overlay--light { background: rgba(255,255,255,.35); }
+.page-hero__box {
+    background: rgba(255,255,255,.9);
+    padding: 1.2rem 2.5rem;
+    border-radius: var(--radius);
+}
+.page-hero--light .page-hero__box h1 { color: var(--navy); margin-bottom: 0; font-weight: 300; }
+
+/* =============================================
+   PAGINA NOSOTROS — medidas de mydsac.com/nosotros
+     foto de cabecera 370px, sin overlay ni titulo
+     2 columnas de 550px con filete vertical al medio
+     titulo  Oswald 26px/26px w300 #222 + linea a la derecha
+     texto   Oswald 20px/22px w300 #222 justificado
+     guion   55x1px #0d4772 en un bloque de 40px
+   ============================================= */
+/* La foto real mide 1500x1012 pero el tercio inferior esta en blanco,
+   por eso se ancla arriba (el original tambien usa 50% 0%). */
+.page-photo {
+    height: 370px;
+    background: var(--gray-light) center top/cover no-repeat;
+}
+
+/* 25px arriba + 25px abajo, mas la franja vacia de 71px que el original
+   deja antes del footer (total 96px de aire inferior). */
+.about-section { padding: 25px 0 96px; }
+
+.about-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+/* filete vertical entre las dos columnas */
+.about-grid::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 0; bottom: 0;
+    width: 1px;
+    background: #e8e8e8;
+}
+
+.about-head { overflow: hidden; padding-bottom: 20px; }
+.about-title {
+    display: inline-block;
+    position: relative;
+    font-family: var(--font-heading);
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 10px;
+}
+.about-title::after {
+    content: '';
+    position: absolute;
+    left: 100%; top: 13px;
+    margin-left: 20px;
+    width: 1300px; height: 5px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.about-text {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #222;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about-dash { position: relative; height: 40px; }
+.about-dash::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 9px;
+    width: 55px; height: 1px;
+    background: var(--navy);
+}
+
+/* =============================================
+   PAGINA SERVICIOS — medidas de mydsac.com/servicios
+     cabecera 349px con la foto anclada arriba a la derecha
+       y el titulo en caja blanca al 50% (Oswald 44px)
+     intro y "por que" con padding de 25px
+     banda gris #f4f4f4 con padding de 60px
+     fichas: imagen 400x270 + titulo Oswald 26px centrado
+   ============================================= */
+/* El original monta la foto en una capa parallax de 483px que arranca
+   134px mas arriba que la banda visible; sin parallax, el mismo encuadre
+   se consigue desplazando el fondo -134px. */
+.serv-hero {
+    background-color: var(--gray-light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% -134px;
+    padding: 100px 0 140px;
+    text-align: center;
+}
+.serv-hero__inner { text-align: center; padding-bottom: 20px; }
+.serv-hero__title {
+    display: inline-block;
+    position: relative;
+    background: rgba(255,255,255,.5);
+    border-radius: 15px;   /* el original redondea la caja del titulo */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+    font-size: 44px;
+    line-height: 59.4px;
+    font-weight: 300;
+    color: #222;
+    text-align: center;
+}
+.serv-hero__title::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 100%;
+    margin-left: -50px;
+    width: 100px; height: 1px;
+    background: var(--navy);
+}
+
+/* --- Intro --- */
+.serv-intro { padding: 25px 0; }
+.serv-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.serv-text--lead { margin-bottom: 20px; }
+.serv-text strong { color: #666; font-weight: 700; }
+
+/* --- ¿Por que trabajar con nosotros? --- */
+.serv-why { padding: 25px 0; }
+.serv-why__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+.serv-why__media img { width: 100%; height: auto; display: block; }
+
+.serv-subtitle {
+    position: relative;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 26.4px;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 30px;   /* 10px de margen + 20px del wrapper original */
+    padding-bottom: 10px;
+}
+.serv-subtitle::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 35px;
+    width: 55px; height: 1px;
+    background: var(--navy);
+}
+
+.serv-list { padding-left: 20px; list-style: disc; }
+.serv-list li {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+
+/* --- Banda gris: soluciones + seguros --- */
+.serv-solutions {
+    background: #f4f4f4;
+    padding: 60px 0;
+}
+.serv-band-title {
+    position: relative;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 26.4px;
+    font-weight: 400;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.serv-band-title::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 35px;
+    width: 113px; height: 1px;
+    background: var(--navy);
+}
+.serv-band-title--next { margin-top: 76px; }
+
+.serv-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+.serv-card { text-align: center; margin: 0; }
+.serv-card img { max-width: 100%; height: auto; margin: 0 auto; display: block; }
+.serv-card figcaption {
+    margin-top: 15px;
+    font-family: var(--font-heading);
+    font-size: 26px;
+    line-height: 28.6px;
+    font-weight: 300;
+    color: #222;
+}
+.serv-card--wide { margin-top: 30px; }
+
+/* =============================================
+   SPLIT COLS (bloques de texto de 2 columnas — Nosotros, etc.)
+   ============================================= */
+.split-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.text-block { margin-bottom: 2.2rem; }
+.text-block:last-child { margin-bottom: 0; }
+.text-block h2 {
+    font-size: 1.4rem; font-weight: 300; color: var(--heading-color);
+    margin-bottom: .8rem; padding-bottom: .8rem;
+    border-bottom: 1px solid var(--border);
+}
+.text-block p { color: var(--text); }
+.mvv__card h3 { font-size: 1.2rem; margin-bottom: .8rem; color: var(--navy); }
+.mvv__card p { font-size: .9rem; color: var(--text); }
+.mvv__card ul { text-align: left; font-size: .9rem; color: var(--text); }
+.mvv__card ul li { padding: .3rem 0; border-bottom: 1px solid var(--border); }
+.mvv__card ul li:last-child { border: none; }
+
+.timeline { max-width: 800px; margin: 0 auto; position: relative; }
+.timeline::before { content:''; position:absolute; left:50%; top:0; bottom:0; width:2px; background:var(--border); transform:translateX(-50%); }
+.timeline__item { display: flex; gap: 2rem; margin-bottom: 2.5rem; }
+.timeline__item--right { flex-direction: row-reverse; }
+.timeline__year { flex-shrink: 0; width: 80px; height: 80px; background: var(--navy); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 700; font-size: .9rem; position: relative; z-index: 1; align-self: flex-start; }
+.timeline__body { background: var(--white); padding: 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border: 1px solid var(--border); flex: 1; }
+.timeline__body h4 { color: var(--navy); margin-bottom: .5rem; }
+.timeline__body p { font-size: .9rem; color: var(--text); }
+
+/* =============================================
+   SERVICES PAGE
+   ============================================= */
+/* ¿Por qué trabajar con nosotros? */
+.why-us { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+.why-us__image { border-radius: var(--radius-lg); overflow: hidden; height: 380px; background: var(--gray-light); }
+.why-us__image img { width: 100%; height: 100%; object-fit: cover; }
+.why-us__content h2 { font-size: 1.6rem; font-weight: 300; color: var(--heading-color); margin-bottom: 1.2rem; }
+.why-us__list li { position: relative; padding: .5rem 0 .5rem 1.4rem; font-size: .95rem; color: var(--text); }
+.why-us__list li::before { content: ''; position: absolute; left: 0; top: 1.1rem; width: 7px; height: 7px; border-radius: 50%; background: var(--sky); }
+
+/* Tarjetas de servicios (foto + título) */
+.service-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+.service-card { display: block; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); }
+.service-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.service-card__img { height: 180px; background: var(--gray-light) center/cover no-repeat; }
+.service-card h3 { font-size: .95rem; font-weight: 400; color: var(--navy); padding: 1rem 1.2rem; background: var(--white); }
+
+/* Listas simples reutilizables */
+.plain-list li { position: relative; padding: .45rem 0 .45rem 1.2rem; font-size: .92rem; color: var(--text); border-bottom: 1px solid var(--border); }
+.plain-list li:last-child { border-bottom: none; }
+.plain-list li::before { content: '\2013'; position: absolute; left: 0; color: var(--sky); }
+.plain-list--cols { column-count: 2; column-gap: 2rem; }
+.plain-list--cols li { break-inside: avoid; }
+
+/* =============================================
+   CLIENTS PAGE
+   ============================================= */
+.coverage { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.coverage__content h2 { font-size: 1.8rem; color: var(--navy); margin: .5rem 0 1rem; }
+.coverage__content p { color: var(--text); margin-bottom: 1rem; }
+.coverage__regions-list { column-count: 2; column-gap: 2rem; margin-top: 1rem; }
+.coverage__regions-list li { font-size: .95rem; color: var(--text); padding: .3rem 0; list-style: disc; margin-left: 1.2rem; }
+.map-placeholder { background: var(--white); border: 2px dashed var(--border); border-radius: var(--radius-lg); height: 360px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text); }
+.map-placeholder i { font-size: 4rem; color: var(--navy); margin-bottom: 1rem; }
+.map-placeholder small { color: var(--sky); font-weight: 700; }
+
+
+/* =============================================
+   PARTNERS / COMPANIES PAGE
+   ============================================= */
+.partners-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 2.5rem 3rem; align-items: center; }
+.partner-card { text-align: center; padding: 1rem 0; }
+.partner-card img { max-height: 70px; width: auto; object-fit: contain; margin: 0 auto; }
+.partner-card__name { display: none; font-size: .85rem; color: var(--text); }
+
+/* =============================================
+   TEAM
+   ============================================= */
+.partner-rows { display: flex; flex-direction: column; gap: 2.5rem; }
+.partner-row { display: grid; grid-template-columns: 180px 1fr; gap: 2rem; align-items: center; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border); }
+.partner-row:last-child { border-bottom: none; padding-bottom: 0; }
+.partner-row__logo { display: flex; align-items: center; justify-content: center; }
+.partner-row__logo img { max-height: 90px; width: auto; object-fit: contain; }
+.partner-row__initial { width: 90px; height: 90px; border-radius: 50%; background: var(--navy); color: var(--white); font-family: var(--font-heading); font-size: 2rem; display: flex; align-items: center; justify-content: center; }
+.partner-row__body h3 { font-size: 1.1rem; font-weight: 400; color: var(--navy); margin-bottom: .5rem; }
+.partner-row__body p { font-size: .92rem; color: var(--text); }
+
+/* =============================================
+   NEWS PAGE — medidas tomadas del sitio original
+   (mydsac.com, tema rttheme19) con getBoundingClientRect
+   + getComputedStyle sobre article.loop:
+     columna 1130px  ·  separacion entre posts 60px
+     imagen 800x350 pegada a la izquierda
+     badge de video 50x50, circulo blanco, margin -35px 0 0 50px
+     texto sangrado 50px (padding lateral del bloque)
+     fecha   Roboto 11px/15.7px  letter-spacing 3px  #666
+     titulo  Oswald 26px/28.6px  w300  #222  (30px/33px en el detalle)
+     resumen Roboto 14px/20px  #666
+     meta    border-top 1px #e8e8e8, pt 10px, mt 20px, 11px #999
+   ============================================= */
+.post-list { display: flex; flex-direction: column; gap: 60px; }
+
+.post { max-width: 1130px; }
+
+/* --- Imagen destacada con badge de video --- */
+.post__media {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 800px;          /* tamano natural del thumbnail original */
+    aspect-ratio: 800 / 350;
+    background: var(--gray-light) center/cover no-repeat;
+    margin-bottom: 41px;       /* 10px + el badge que sobresale */
+}
+.post__media::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: rgba(13,71,114,0);
+    transition: var(--transition);
+}
+.post__media:hover::after { background: rgba(13,71,114,.18); }
+
+.post__badge {
+    position: absolute;
+    left: 50px; bottom: -31px;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: var(--white);
+    color: #666;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    z-index: 2;
+    transition: var(--transition);
+}
+.post__media:hover .post__badge { background: var(--sky); color: var(--white); }
+
+/* --- Bloque de texto: sangrado de 50px como el original --- */
+.post__date,
+.post__title,
+.post__excerpt,
+.post__body { padding: 0 50px; }
+
+.post__date {
+    font-size: 11px;
+    line-height: 15.7px;
+    letter-spacing: 3px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.post__title {
+    font-family: var(--font-heading);
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 28.6px;
+    color: #222;
+    margin-bottom: 10px;
+}
+.post__title a { color: inherit; transition: var(--transition); }
+.post__title a:hover { color: var(--sky); }
+
+.post__excerpt,
+.post__body {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.post__body { line-height: 22px; }
+.post__body p { margin-bottom: 20px; }
+.post__body h2 {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+/* --- Linea de meta --- */
+.post__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    /* margen (no padding) para que el filete quede sangrado igual que el texto */
+    margin: 20px 50px 0;
+    padding-top: 10px;
+    border-top: 1px solid #e8e8e8;
+    font-size: 11px;
+    line-height: 15.7px;
+    color: #999;
+}
+.post__meta span { display: inline-flex; align-items: center; gap: 4px; }
+.post__meta i { font-size: 11px; color: #999; }
+
+/* --- Detalle: el original NO sangra el texto y usa titulo de 30px --- */
+.post--single .post__date,
+.post--single .post__title,
+.post--single .post__body { padding: 0; }
+.post--single .post__meta { margin-left: 0; margin-right: 0; }
+.post--single .post__title { font-size: 30px; line-height: 33px; }
+.post--single .post__badge { left: 26px; }
+.post__back { margin-top: 30px; }
+
+/* =============================================
+   CONTACT PAGE
+   ============================================= */
+.contact-layout { display: grid; grid-template-columns: 1fr 360px; gap: 4rem; align-items: start; }
+.contact-form-wrap h2 { font-size: 1.8rem; color: var(--navy); margin: .5rem 0 .8rem; }
+.contact-form-wrap p { color: var(--text); margin-bottom: 2rem; }
+.contact-form { display: flex; flex-direction: column; gap: 1rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-group { display: flex; flex-direction: column; gap: .4rem; }
+.form-group label { font-size: .85rem; font-weight: 400; color: var(--text-dark); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: .6rem 0; border: none; border-bottom: 1px solid var(--border);
+    border-radius: 0; font-family: var(--font-body); font-size: .95rem;
+    color: var(--text); background: transparent;
+    transition: var(--transition); outline: none; width: 100%;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-bottom-color: var(--sky); box-shadow: none; }
+.form-group textarea { resize: vertical; }
+
+.alert { display: flex; align-items: center; gap: .7rem; padding: 1rem 1.2rem; border-radius: var(--radius); margin-bottom: 1.5rem; font-size: .9rem; font-weight: 600; }
+.alert--success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.alert--error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+.contact-info { display: flex; flex-direction: column; gap: 1rem; }
+.contact-info__card { display: flex; gap: 1rem; align-items: flex-start; background: var(--white); padding: 1.2rem; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.contact-info__card > i { font-size: 1.4rem; color: var(--sky); flex-shrink: 0; margin-top: .2rem; }
+.contact-info__card h4 { font-size: .85rem; color: var(--navy); margin-bottom: .2rem; }
+.contact-info__card p { font-size: .9rem; color: var(--text); }
+.contact-info__card a { color: var(--navy); transition: var(--transition); }
+.contact-info__card a:hover { color: var(--sky); }
+.contact-map { border-radius: var(--radius); overflow: hidden; margin-top: .5rem; }
+

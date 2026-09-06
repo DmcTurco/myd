@@ -1,0 +1,104 @@
+/* =============================================
+   HERO V2 — Estilo mydsac.com (ocupa la pantalla completa, como el sitio real)
+   ============================================= */
+.home-hero-block {
+    display: flex; flex-direction: column;
+    min-height: calc(100vh - 88px);
+}
+.hero-v2 {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 380px;
+    overflow: hidden;
+    background: #1a2a45;
+}
+
+.hero-v2__slider { position: absolute; inset: 0; }
+
+.hero-v2__slide {
+    position: absolute; inset: 0;
+    opacity: 0; transition: opacity .3s ease;
+    background-size: cover; background-position: center;
+}
+
+/* Gradient backgrounds for slides (fallback when no images) */
+.hero-v2__slide:nth-child(1) {
+    background-image: linear-gradient(135deg, #0d1b2e 0%, #1b3a6b 50%, #0d1b2e 100%);
+}
+.hero-v2__slide:nth-child(2) {
+    background-image: linear-gradient(135deg, #1a0a0a 0%, #3d1515 50%, #1a0a0a 100%);
+}
+.hero-v2__slide:nth-child(3) {
+    background-image: linear-gradient(135deg, #0a1a0d 0%, #1b3a2a 50%, #0a1a0d 100%);
+}
+.hero-v2__slide--active { opacity: 1; }
+
+.hero-v2__text-box {
+    background: rgba(102, 20, 17, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 860px;
+    width: max-content;
+    text-align: center;
+    position: absolute; left: 50%; bottom: 19.4%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.hero-v2__text-box p {
+    color: var(--white);
+    font-size: 2.5rem;
+    line-height: 1.3;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+/* Arrows */
+.hero-v2__prev, .hero-v2__next {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    z-index: 10; color: var(--white);
+    font-size: 1.6rem; line-height: 1;
+    cursor: pointer; background: rgba(0,0,0,.35);
+    border: none; width: 42px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background var(--transition);
+}
+.hero-v2__prev { left: 0; }
+.hero-v2__next { right: 0; }
+.hero-v2__prev:hover, .hero-v2__next:hover { background: rgba(0,0,0,.6); }
+
+/* Dots — el sitio real no usa navegación por puntos, solo flechas */
+.hero-v2__dots { display: none; }
+
+/* =============================================
+   CTA STRIP
+   ============================================= */
+.cta-strip {
+    background: var(--navy);
+    padding: 22px 0;
+}
+.cta-strip__inner {
+    display: flex; align-items: center;
+    justify-content: space-between; gap: 2rem;
+}
+.cta-strip__inner p {
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 1.5rem; font-weight: 300;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1.4;
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #849fb9;
+}
+.cta-strip__btn {
+    display: inline-flex; align-items: center; gap: .5rem;
+    background: var(--maroon); color: var(--white);
+    font-family: var(--font-body); font-weight: 400;
+    font-size: .94rem; letter-spacing: normal; text-transform: none;
+    padding: 12px 15px; border-radius: 0;
+    white-space: nowrap; transition: var(--transition);
+    flex-shrink: 0;
+}
+.cta-strip__btn:hover { background: #4d0f0d; color: var(--white); }
+
