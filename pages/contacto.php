@@ -94,8 +94,7 @@
                 </li>
                  <li>
                     <i class="fas fa-phone"></i>
-                    <span><a href="tel:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE) ?>"><?= SITE_PHONE_2
-                     ?></a></span>
+                    <span><a href="tel:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE) ?>"><?= SITE_PHONE_2 ?></a></span>
                 </li>
                 <li>
                     <i class="far fa-envelope"></i>
