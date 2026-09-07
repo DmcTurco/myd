@@ -1,29 +1,110 @@
 <?php
 /**
- * Mapa de URLs limpias -> paginas internas.
+ * ===========================================================================
+ *  REGISTRO DE PAGINAS  —  el unico sitio donde se editan
+ * ===========================================================================
  *
- * Se conservan exactamente las rutas del sitio original (mydsac.com) para no
- * romper enlaces ni posicionamiento ya existentes.
+ * Cada pagina se define UNA sola vez. De aqui salen automaticamente:
+ *   - la URL publica            (/nosotros/, /socios/ ...)
+ *   - el texto del boton del menu
+ *   - el titulo de la pestaña del navegador
+ *   - la descripcion para Google
+ *   - la lista de paginas validas del enrutador
+ *
+ * Para renombrar una seccion basta con cambiarla aqui: el menu, los enlaces,
+ * la pestaña y el buscador se actualizan solos.
+ *
+ *   'ruta'   Lo que se ve en la URL. '' es la portada. null = no tiene URL
+ *            propia (la ficha de servicio la recibe de $rutas_servicios).
+ *   'menu'   Texto del boton en la cabecera. null = no sale en el menu.
+ *   'titulo' Va delante del nombre del sitio en la pestaña.
+ *            null = solo el nombre del sitio (caso de la portada).
+ *   'desc'   Descripcion que muestra Google en los resultados.
+ *   'submenu' Solo para Servicios: dibuja el desplegable de tres niveles.
+ *
+ * OJO: la CLAVE de la izquierda ('home', 'empresa', 'socios'...) es el nombre
+ * del archivo en /pages y NO se debe cambiar. Todo lo demas si.
  */
+$paginas = [
 
-// Ruta publica => nombre de la pagina en /pages
-$rutas_paginas = [
-    ''          => 'home',
-    'nosotros'  => 'empresa',
-    'servicios' => 'servicios',
-    'clientes'  => 'clientes',
-    'companias' => 'companias',
-    'socios'    => 'socios',
-    'noticias'  => 'noticias',
-    'contacto'  => 'contacto',
+    'home' => [
+        'ruta'   => '',
+        'menu'   => 'Inicio',
+        'titulo' => null,
+        'desc'   => 'M&D Asesores Financieros - Especialistas en Cartas Fianza, Pólizas de Caución y Seguros en Lima, Perú.',
+    ],
+
+    'empresa' => [
+        'ruta'   => 'nosotros',
+        'menu'   => 'Nosotros',
+        'titulo' => 'Nosotros',
+        'desc'   => 'Conoce quiénes somos, nuestra misión, visión y valores corporativos.',
+    ],
+
+    'servicios' => [
+        'ruta'    => 'servicios',
+        'menu'    => 'Servicios',
+        'titulo'  => 'Servicios',
+        'desc'    => 'Gestión de Cartas Fianza, Pólizas de Caución, Seguros Generales y Servicios Administrativos.',
+        'submenu' => true,
+    ],
+
+    'clientes' => [
+        'ruta'   => 'clientes',
+        'menu'   => 'Clientes',
+        'titulo' => 'Clientes',
+        'desc'   => 'Empresas que confían en M&D Asesores Financieros a nivel nacional.',
+    ],
+
+    'companias' => [
+        'ruta'   => 'companias',
+        'menu'   => 'Compañías',
+        'titulo' => 'Compañías Asociadas',
+        'desc'   => 'Compañías aseguradoras y financieras con las que trabajamos.',
+    ],
+
+    'socios' => [
+        'ruta'   => 'socios',
+        'menu'   => 'Socios',
+        'titulo' => 'Socios',
+        'desc'   => 'Conoce a nuestro equipo de socios y asesores.',
+    ],
+
+    'noticias' => [
+        'ruta'   => 'noticias',
+        'menu'   => 'Noticias',
+        'titulo' => 'Noticias',
+        'desc'   => 'Últimas noticias y novedades del sector de seguros y fianzas.',
+    ],
+
+    'contacto' => [
+        'ruta'   => 'contacto',
+        'menu'   => 'Contacto',
+        'titulo' => 'Contáctenos',
+        'desc'   => 'Contáctenos para una asesoría personalizada sin costo.',
+    ],
+
+    // Ficha de un servicio o seguro. No sale en el menu y su URL la da
+    // $rutas_servicios; el titulo real lo pone la propia ficha.
+    'servicio' => [
+        'ruta'   => null,
+        'menu'   => null,
+        'titulo' => 'Servicios',
+        'desc'   => 'Cartas fianza, pólizas de caución y seguros generales.',
+    ],
 ];
 
-// Ruta publica => slug en $servicios_paginas (data/servicios.php)
+
+/**
+ * Rutas de las 14 fichas de servicio y seguro.
+ * Ruta publica => clave en $servicios_paginas (data/servicios.php).
+ * Se conservan tal cual las tenia el sitio original.
+ */
 $rutas_servicios = [
-    'carta-fianza-y-seguros-de-caucion'                                          => 'soluciones-integrales',
+    'carta-fianza-y-seguros-de-caucion'                                           => 'soluciones-integrales',
     'gestion-para-apertura-y-aumento-de-linea-de-credito-para-las-cartas-fianzas' => 'linea-credito',
     'gestion-de-cartas-fianzas-para-obras-publicas-y-privadas'                    => 'cartas-fianzas-obras',
-    'gestion-de-seguros-generales'                                               => 'seguros-generales',
+    'gestion-de-seguros-generales'                                                => 'seguros-generales',
     'trc'                   => 'trc',
     'trm'                   => 'trm',
     'trec'                  => 'trec',
@@ -36,6 +117,24 @@ $rutas_servicios = [
     'soat'                  => 'soat',
 ];
 
-// Inversos, para generar enlaces
-$paginas_rutas   = array_flip($rutas_paginas);
+
+/* ===========================================================================
+   De aqui abajo no hace falta tocar nada: todo se arma solo con $paginas.
+   =========================================================================== */
+
+$rutas_paginas = [];   // ruta publica  => clave de pagina
+$valid_pages   = [];   // claves que el enrutador acepta
+$titles        = [];   // clave => titulo de la pestaña
+$descriptions  = [];   // clave => descripcion para Google
+
+foreach ($paginas as $clave => $p) {
+    $valid_pages[] = $clave;
+    if (($p['ruta'] ?? null) !== null) {
+        $rutas_paginas[$p['ruta']] = $clave;
+    }
+    $titles[$clave]       = empty($p['titulo']) ? SITE_NAME : $p['titulo'] . ' | ' . SITE_NAME;
+    $descriptions[$clave] = $p['desc'] ?? '';
+}
+
+$paginas_rutas   = array_flip($rutas_paginas);   // clave de pagina => ruta
 $servicios_rutas = array_flip($rutas_servicios);

@@ -1,5 +1,8 @@
 <?php require_once __DIR__ . '/../data/menu.php';
 
+// $paginas viene de config/rutas.php (el registro unico de paginas)
+if (!isset($paginas)) { require __DIR__ . '/../config/rutas.php'; }
+
 /* Servicio que se esta viendo, para marcarlo en azul en el desplegable igual
    que hace el original (current-menu-item / current-menu-ancestor). */
 $serv_actual = (($GLOBALS['page'] ?? '') === 'servicio') ? ($_GET['s'] ?? '') : '';
@@ -52,10 +55,14 @@ if ($serv_actual !== '') {
         <!-- Menú -->
         <nav class="navbar__menu" id="navMenu">
             <ul>
-                <li><a href="<?= page_url('home') ?>"      class="<?= active_page('home') ?>">Inicio</a></li>
-                <li><a href="<?= page_url('empresa') ?>"   class="<?= active_page('empresa') ?>">Nosotros</a></li>
-                <li class="has-dropdown">
-                    <a href="<?= page_url('servicios') ?>" class="<?= active_page('servicios') ?><?= ($GLOBALS['page'] ?? '') === 'servicio' ? ' active' : '' ?>">Servicios</a>
+                <?php foreach ($paginas as $clave => $pg):
+                    if (empty($pg['menu'])) continue;          // no sale en el menu
+                    $tiene_sub = !empty($pg['submenu']);
+                ?>
+                <li<?= $tiene_sub ? ' class="has-dropdown"' : '' ?>>
+                    <a href="<?= page_url($clave) ?>" class="<?= active_page($clave) ?><?= ($tiene_sub && ($GLOBALS['page'] ?? '') === 'servicio') ? ' active' : '' ?>"><?= htmlspecialchars($pg['menu']) ?></a>
+
+                    <?php if ($tiene_sub): ?>
                     <ul class="dropdown">
                         <?php foreach ($menu_servicios as $ms): ?>
                         <li class="<?= !empty($ms['hijos']) ? 'has-submenu' : '' ?>">
@@ -70,12 +77,9 @@ if ($serv_actual !== '') {
                         </li>
                         <?php endforeach; ?>
                     </ul>
+                    <?php endif; ?>
                 </li>
-                <li><a href="<?= page_url('clientes') ?>"  class="<?= active_page('clientes') ?>">Clientes</a></li>
-                <li><a href="<?= page_url('companias') ?>" class="<?= active_page('companias') ?>">Compañías</a></li>
-                <li><a href="<?= page_url('socios') ?>"    class="<?= active_page('socios') ?>">Socios</a></li>
-                <li><a href="<?= page_url('noticias') ?>"  class="<?= active_page('noticias') ?>">Noticias</a></li>
-                <li><a href="<?= page_url('contacto') ?>"  class="<?= active_page('contacto') ?>">Contacto</a></li>
+                <?php endforeach; ?>
             </ul>
         </nav>
     </div>
