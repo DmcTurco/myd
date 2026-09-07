@@ -128,7 +128,7 @@ function parseHomeDate(string $fecha): array {
     <div class="container home-content__inner">
 
         <!-- ── Últimas Noticias ── -->
-        <div class="home-news">
+        <!-- <div class="home-news">
             <div class="home-section-head"><h3 class="home-section-title">Últimas Noticias</h3></div>
 
             <?php foreach (array_slice($noticias, 0, 3) as $noticia):
@@ -145,7 +145,7 @@ function parseHomeDate(string $fecha): array {
                 </div>
             </div>
             <?php endforeach; ?>
-        </div>
+        </div> -->
 
         <!-- ── Compañías (carrusel) ── -->
         <div class="home-companies">
