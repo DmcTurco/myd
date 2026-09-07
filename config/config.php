@@ -1,5 +1,5 @@
 <?php
-define('SITE_NAME',    'MyDSAC - M&D Asesores Financieros');
+define('SITE_NAME',    'M&DSAC - M&D Asesoria Financiera');
 /**
  * SITE_URL se detecta sola: asi el mismo codigo sirve en localhost/MYD y en
  * el dominio de produccion sin tocar nada. Para fijarla a mano, reemplaza
