@@ -10,7 +10,7 @@ if (!isset($noticias)) {
 
         <!-- Columna 1: Marca y logo -->
         <div>
-            <span class="footer__brand-title">M&amp;D Asesores Financieros</span>
+            <span class="footer__brand-title">M&amp;D Asesoria Financiera</span>
             <div class="footer__logo">
                 <img src="<?= asset('images/logo-white.webp') ?>" alt="M&D Asesoría Financiera"
                      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
