@@ -3,11 +3,14 @@ require_once __DIR__ . '/../data/noticias.php';
 
 // Compañías para el carrusel de inicio
 $companias_home = [
-    ['nombre' => 'La Positiva Seguros',        'logo' => 'positiva.webp'],
-    ['nombre' => 'AVLA',                       'logo' => 'avla.webp'],
-    ['nombre' => 'SECREX CESCE',                'logo' => 'secrex.webp'],
-    ['nombre' => 'AmTrust Insurance Spain',    'logo' => 'amtrust.webp'],
-    ['nombre' => 'InSur — Partner of Atradius','logo' => 'insur-atradius.webp'],
+            ['nombre' => 'CESCE', 'logo' => 'cesce.webp'],
+            ['nombre' => 'AVLA',                        'logo' => 'avla.webp'],
+            ['nombre' => 'La Positiva Seguros',         'logo' => 'positiva.webp'],
+            ['nombre' => 'nacional de seguros', 'logo' => 'nacionalseguros.webp'],
+            ['nombre' => 'InSur — Partner of Atradius', 'logo' => 'insur-atradius.webp'],
+            ['nombre' => 'MAPFRE', 'logo' => 'mapfre.webp'],
+            ['nombre' => 'LIBERTY', 'logo' => 'liberty.webp'],
+            ['nombre' => 'CRECER', 'logo' => 'crecer2.webp'],
 ];
 
 // Parsear fecha al formato: día / "Mes AA"
