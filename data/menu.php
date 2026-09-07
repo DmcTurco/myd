@@ -6,7 +6,7 @@
 $menu_servicios = [
     [
         'slug'   => 'soluciones-integrales',
-        'titulo' => 'SOLUCIONES INTEGRALES EN HERRAMIENTAS FINANCIERAS Y SEGUROS',
+        'titulo' => 'HERRAMIENTAS FINANCIERAS',
         'hijos'  => [
             ['slug' => 'linea-credito',        'titulo' => 'Gestión para Apertura y Aumento de Línea de Crédito para las Cartas Fianzas'],
             ['slug' => 'cartas-fianzas-obras', 'titulo' => 'Gestión de Cartas Fianzas para Obras Públicas y Privadas'],
