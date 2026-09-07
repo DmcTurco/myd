@@ -52,13 +52,13 @@ $paginas = [
         'submenu' => true,
     ],
 
-    'clientes' => [
-        'ruta'   => 'clientes',
-        'menu'   => 'Clientes',
-        'titulo' => 'Clientes',
-        'desc'   => 'Empresas que confían en M&D Asesores Financieros a nivel nacional.',
-        'h1'     => 'NUESTROS CLIENTES',
-    ],
+    // 'clientes' => [
+    //     'ruta'   => 'clientes',
+    //     'menu'   => 'Clientes',
+    //     'titulo' => 'Clientes',
+    //     'desc'   => 'Empresas que confían en M&D Asesores Financieros a nivel nacional.',
+    //     'h1'     => 'NUESTROS CLIENTES',
+    // ],
 
     'companias' => [
         'ruta'   => 'companias',
@@ -77,12 +77,12 @@ $paginas = [
         'bajada' => 'Trabajamos con los siguientes partners:',
     ],
 
-    'noticias' => [
-        'ruta'   => 'noticias',
-        'menu'   => 'Noticias',
-        'titulo' => 'Noticias',
-        'desc'   => 'Últimas noticias y novedades del sector de seguros y fianzas.',
-    ],
+    // 'noticias' => [
+    //     'ruta'   => 'noticias',
+    //     'menu'   => 'Noticias',
+    //     'titulo' => 'Noticias',
+    //     'desc'   => 'Últimas noticias y novedades del sector de seguros y fianzas.',
+    // ],
 
     'contacto' => [
         'ruta'   => 'contacto',

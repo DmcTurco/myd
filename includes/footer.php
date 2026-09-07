@@ -20,7 +20,7 @@ if (!isset($noticias)) {
         </div>
 
         <!-- Columna 2: Últimas Noticias -->
-        <div class="footer__col">
+        <!-- <div class="footer__col">
             <h4>Últimas Noticias</h4>
             <?php foreach (array_slice($noticias, 0, 3) as $noticia): ?>
             <div class="footer__news-item">
@@ -33,7 +33,7 @@ if (!isset($noticias)) {
                 </span>
             </div>
             <?php endforeach; ?>
-        </div>
+        </div> -->
 
         <!-- Columna 3: Contáctenos -->
         <div class="footer__col">
@@ -54,7 +54,7 @@ if (!isset($noticias)) {
             </ul>
             <div class="footer__hours">
                 Horario de Atención:<br>
-                Lunes a Viernes de 9:00 am a 6:00 pm
+                Lunes a Viernes de 8:30 am a 5:00 pm
             </div>
         </div>
 

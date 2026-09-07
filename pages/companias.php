@@ -29,6 +29,7 @@
             ['nombre' => 'AmTrust Insurance Spain',     'logo' => 'amtrust.webp'],
             ['nombre' => 'La Positiva Seguros',         'logo' => 'positiva.webp'],
             ['nombre' => 'InSur — Partner of Atradius', 'logo' => 'insur-atradius.webp'],
+            // ['nombre' => 'prueba', 'logo' => 'xxxx.formato'],            
         ];
         foreach ($partners as $p): ?>
         <div class="comp-cell">

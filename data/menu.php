@@ -12,21 +12,21 @@ $menu_servicios = [
             ['slug' => 'cartas-fianzas-obras', 'titulo' => 'Gestión de Cartas Fianzas para Obras Públicas y Privadas'],
         ],
     ],
-    [
-        'slug'   => 'seguros-generales',
-        'titulo' => 'SEGUROS GENERALES',
-        'hijos'  => [
-            ['slug' => 'trc',                   'titulo' => 'Todo Riesgo de Construcción (TRC)'],
-            ['slug' => 'trm',                   'titulo' => 'Todo Riesgo de Montaje (TRM)'],
-            ['slug' => 'trec',                  'titulo' => 'Todo Riesgo de Maquinaria y/o Equipo (TREC)'],
-            ['slug' => 'sctr',                  'titulo' => 'SCTR (Salud – Pension)'],
-            ['slug' => 'accidentes-personales', 'titulo' => 'Accidentes Personales'],
-            ['slug' => 'vida-ley',              'titulo' => 'Vida Ley'],
-            ['slug' => 'eps',                   'titulo' => 'EPS'],
-            ['slug' => 'oncologico',            'titulo' => 'Oncologico'],
-            ['slug' => 'vehicular',             'titulo' => 'Vehicular'],
-            ['slug' => 'soat',                  'titulo' => 'SOAT DIGITAL'],
-        ],
-    ],
+    // [
+    //     'slug'   => 'seguros-generales',
+    //     'titulo' => 'SEGUROS GENERALES',
+    //     'hijos'  => [
+    //         ['slug' => 'trc',                   'titulo' => 'Todo Riesgo de Construcción (TRC)'],
+    //         ['slug' => 'trm',                   'titulo' => 'Todo Riesgo de Montaje (TRM)'],
+    //         ['slug' => 'trec',                  'titulo' => 'Todo Riesgo de Maquinaria y/o Equipo (TREC)'],
+    //         ['slug' => 'sctr',                  'titulo' => 'SCTR (Salud – Pension)'],
+    //         ['slug' => 'accidentes-personales', 'titulo' => 'Accidentes Personales'],
+    //         ['slug' => 'vida-ley',              'titulo' => 'Vida Ley'],
+    //         ['slug' => 'eps',                   'titulo' => 'EPS'],
+    //         ['slug' => 'oncologico',            'titulo' => 'Oncologico'],
+    //         ['slug' => 'vehicular',             'titulo' => 'Vehicular'],
+    //         ['slug' => 'soat',                  'titulo' => 'SOAT DIGITAL'],
+    //     ],
+    // ],
 ];
 
