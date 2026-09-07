@@ -27,12 +27,14 @@
             ['nombre' => 'CESCE', 'logo' => 'cesce.webp'],
             ['nombre' => 'AVLA',                        'logo' => 'avla.webp'],
             ['nombre' => 'La Positiva Seguros',         'logo' => 'positiva.webp'],
-            ['nombre' => 'nacional de seguros', 'logo' => 'nacional_seguros.webp'],
-            ['nombre' => 'SECREX CESCE',                'logo' => 'secrex.webp'],
-            ['nombre' => 'AmTrust Insurance Spain',     'logo' => 'amtrust.webp'],
+            ['nombre' => 'nacional de seguros', 'logo' => 'nacionalseguros.webp'],
             ['nombre' => 'InSur — Partner of Atradius', 'logo' => 'insur-atradius.webp'],
-            
-            // ['nombre' => 'prueba', 'logo' => 'xxxx.formato'],            
+            ['nombre' => 'MAPFRE', 'logo' => 'mapfre.webp'],
+            ['nombre' => 'LIBERTY', 'logo' => 'liberty.webp'],
+            ['nombre' => 'CRECER', 'logo' => 'crecer2.webp'],
+            // ['nombre' => 'AmTrust Insurance Spain',     'logo' => 'amtrust.webp'],
+            // ['nombre' => 'SECREX CESCE',                'logo' => 'secrex.webp'],
+                       
         ];
         foreach ($partners as $p): ?>
         <div class="comp-cell">

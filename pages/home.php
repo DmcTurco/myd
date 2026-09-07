@@ -107,15 +107,19 @@ function parseHomeDate(string $fecha): array {
         <div class="services-icons__grid">
             <div class="services-icons__item">
                 <i class="fas fa-pencil-alt"></i>
-                <p>Gestión para apertura y aumento de línea de crédito para las cartas fianzas</p>
+                <p>Gestión para apertura y aumento de línea de crédito para las cartas fianzas y/o pólizas de caucion para obras, servicios o suministros públicos y privados.</p>
             </div>
             <div class="services-icons__item">
                 <i class="fas fa-file-alt"></i>
-                <p>Gestión de cartas fianzas para obras públicas y privadas</p>
+                <p>Garantizamos la aprobacion de sus cartas fianza en tiempo reducido</p>
             </div>
             <div class="services-icons__item">
                 <i class="fas fa-paperclip"></i>
-                <p>Gestión de seguros generales</p>
+                <p>Rapidez y confiabilidad en la preaprobacion de lineas fianzas</p>
+            </div>
+            <div class="services-icons__item">
+                <i class="fas fa-paperclip"></i>
+                <p>Apertura de lineas de fianzas en las principales compañias de seguros y el crecimiento de las mismas a corto plazo</p>
             </div>
         </div>
     </div>
@@ -149,7 +153,7 @@ function parseHomeDate(string $fecha): array {
 
         <!-- ── Compañías (carrusel) ── -->
         <div class="home-companies">
-            <div class="home-section-head"><h3 class="home-section-title">Compañías</h3></div>
+            <div class="home-section-head"><h3 class="home-section-title">Aseguradoras</h3></div>
 
             <div class="comp-carousel">
                 <div class="comp-carousel__track" id="compTrack">

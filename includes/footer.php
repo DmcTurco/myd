@@ -70,7 +70,7 @@ if (!isset($noticias)) {
 
     <div class="footer__bottom">
         <div class="container">
-            <p><?= date('Y') ?> Todos los Derechos Reservados &copy; M&amp;D Asesores Financieros</p>
+            <p><?= date('Y') ?> Todos los Derechos Reservados &copy; M&amp;D Asesoria Financiera</p>
         </div>
     </div>
 </footer>

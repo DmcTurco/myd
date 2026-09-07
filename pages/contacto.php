@@ -75,7 +75,7 @@
 
             <div class="contacto-map">
                 <iframe src="https://www.google.com/maps?q=-12.126175,-77.019684&amp;z=16&amp;output=embed"
-                        title="Ubicación de M&D Asesores Financieros"
+                        title="Ubicación de M&D Asesoria Financiera"
                         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
@@ -85,8 +85,17 @@
                     <span><?= SITE_ADDRESS ?></span>
                 </li>
                 <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span><?= SITE_ADDRESS_2 ?></span>
+                </li>
+                <li>
                     <i class="fas fa-phone"></i>
                     <span><a href="tel:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE) ?>"><?= SITE_PHONE ?></a></span>
+                </li>
+                 <li>
+                    <i class="fas fa-phone"></i>
+                    <span><a href="tel:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE) ?>"><?= SITE_PHONE_2
+                     ?></a></span>
                 </li>
                 <li>
                     <i class="far fa-envelope"></i>
