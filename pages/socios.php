@@ -14,13 +14,13 @@
      260px, y el ancho del texto acompana al de cada logo. -->
 <?php
 $socios = [
-    [
-        'logo'   => 'partners/tmgroup.webp',
-        'alt'    => 'TM Group',
-        'ancho'  => 260,   // ancho con el que se muestra el logo
-        'alto'   => 260,   // alto del contenido de la fila en el original
-        'texto'  => 'Se encuentra en el centro del país donde aseguramos nuestra presencia brindando la misma calidad de servicio y asesoría personalizada.',
-    ],
+    // [
+    //     'logo'   => 'partners/tmgroup.webp',
+    //     'alt'    => 'TM Group',
+    //     'ancho'  => 260,   // ancho con el que se muestra el logo
+    //     'alto'   => 260,   // alto del contenido de la fila en el original
+    //     'texto'  => 'Se encuentra en el centro del país donde aseguramos nuestra presencia brindando la misma calidad de servicio y asesoría personalizada.',
+    // ],
     [
         'logo'   => 'partners/dinamo.webp',
         'alt'    => 'Dinamo Corredores de Seguros',
@@ -28,13 +28,13 @@ $socios = [
         'alto'   => 260,
         'texto'  => 'Broker de seguros el cual brinda la asesoría en seguros generales donde brindamos la misma calidad de servicio y asesoría personalizada.',
     ],
-    [
-        'logo'   => 'partners/leigh.webp',
-        'alt'    => 'Corredor de seguros',
-        'ancho'  => 160,
-        'alto'   => 184,
-        'texto'  => 'Corredor de Seguros.',
-    ],
+    // [
+    //     'logo'   => 'partners/leigh.webp',
+    //     'alt'    => 'Corredor de seguros',
+    //     'ancho'  => 160,
+    //     'alto'   => 184,
+    //     'texto'  => 'Corredor de Seguros.',
+    // ],
 ];
 foreach ($socios as $s): ?>
 <section class="socios-row">
