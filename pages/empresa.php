@@ -12,7 +12,7 @@
 
         <div class="about-col">
             <div class="about-head"><h4 class="about-title">¿Quiénes somos?</h4></div>
-            <p class="about-text">Somos una empresa joven formada desde el 2015 la cual brinda asesoría integral para gestión de cartas fianzas, pólizas de caución en obras públicas y privadas, con un equipo de profesionales el cual está entrenado para lograr el éxito de la gestión.</p>
+            <p class="about-text">Somos lideres en el mercado por 10 años brindando asesoría integral para gestión de cartas fianzas, pólizas de caución en obras públicas y privadas, con un equipo de profesionales el cual está entrenado para lograr el éxito de la gestión.</p>
             <div class="about-dash"></div>
 
             <div class="about-head"><h4 class="about-title">Compromiso</h4></div>

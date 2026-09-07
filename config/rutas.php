@@ -61,11 +61,11 @@ $paginas = [
     // ],
 
     'companias' => [
-        'ruta'   => 'companias',
-        'menu'   => 'Compañías',
+        'ruta'   => 'Aseguradoras',
+        'menu'   => 'Aseguradoras',
         'titulo' => 'Compañías Asociadas',
         'desc'   => 'Compañías aseguradoras y financieras con las que trabajamos.',
-        'h1'     => 'COMPAÑIAS',
+        'h1'     => 'ASEGURADORAS',
     ],
 
     'socios' => [

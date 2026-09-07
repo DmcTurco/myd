@@ -133,24 +133,24 @@ $servicios_paginas = [
                     [ 't' => 'separador' ],
                 ] ],
             ] ],
-            [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
-                [ 'w' => '1/6' ],
-                [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania1.webp' ],
-                ] ],
-                [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente4.webp' ],
-                ] ],
-                [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente1.webp' ],
-                ] ],
-                [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania5_2.webp' ],
-                ] ],
-                [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania6_2.webp' ],
-                ] ],
-            ] ],
+            // [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
+            //     [ 'w' => '1/6' ],
+            //     [ 'w' => '1/6', 'items' => [
+            //         [ 't' => 'imagen', 'src' => 'Compania1.webp' ],
+            //     ] ],
+            //     [ 'w' => '1/6', 'items' => [
+            //         [ 't' => 'imagen', 'src' => 'cliente4.webp' ],
+            //     ] ],
+            //     [ 'w' => '1/6', 'items' => [
+            //         [ 't' => 'imagen', 'src' => 'cliente1.webp' ],
+            //     ] ],
+            //     [ 'w' => '1/6', 'items' => [
+            //         [ 't' => 'imagen', 'src' => 'Compania5_2.webp' ],
+            //     ] ],
+            //     [ 'w' => '1/6', 'items' => [
+            //         [ 't' => 'imagen', 'src' => 'Compania6_2.webp' ],
+            //     ] ],
+            // ] ],
         ],
     ],
     'seguros-generales' => [

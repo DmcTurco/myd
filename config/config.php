@@ -18,9 +18,11 @@ if (!defined('SITE_URL')) {
     define('SITE_URL', $esquema . '://' . $host . rtrim($base, '/'));
 }
 define('SITE_EMAIL',   'informes@mydsac.com');
-define('SITE_PHONE',   '+01 744 3261');
+define('SITE_PHONE',   '+51 981 535 709');
+define('SITE_PHONE_2',   '+51 959 434 748');
 define('SITE_ADDRESS', 'Av. Benavides 1238 Of. 602, Miraflores, Lima');
-define('SITE_HOURS',   'Lunes a Viernes de 9:00 am a 6:00 pm');
+define('SITE_ADDRESS_2', 'Av. Ramon Mujica 108 Of. 405, Piura');
+define('SITE_HOURS',   'Lunes a Viernes de 8:30 am a 5:00 pm');
 
 // Mail (configura con tu servidor SMTP real)
 define('MAIL_FROM',    'noreply@mydsac.com');

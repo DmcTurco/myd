@@ -50,12 +50,12 @@
             </figure>
         </div>
 
-        <h4 class="serv-band-title serv-band-title--next" id="seguros">Seguros generales</h4>
+        <!-- <h4 class="serv-band-title serv-band-title--next" id="seguros">Seguros generales</h4>
 
         <figure class="serv-card serv-card--wide">
             <img src="<?= asset('images/servicios/seguros-generales.webp') ?>" alt="Seguros Generales">
             <figcaption>Seguros Generales</figcaption>
-        </figure>
+        </figure> -->
 
     </div>
 </section>

@@ -24,11 +24,14 @@
         <?php
         // Mismo orden que el sitio original: AVLA, SECREX, AmTrust, La Positiva, InSur.
         $partners = [
+            ['nombre' => 'CESCE', 'logo' => 'cesce.webp'],
             ['nombre' => 'AVLA',                        'logo' => 'avla.webp'],
+            ['nombre' => 'La Positiva Seguros',         'logo' => 'positiva.webp'],
+            ['nombre' => 'nacional de seguros', 'logo' => 'nacional_seguros.webp'],
             ['nombre' => 'SECREX CESCE',                'logo' => 'secrex.webp'],
             ['nombre' => 'AmTrust Insurance Spain',     'logo' => 'amtrust.webp'],
-            ['nombre' => 'La Positiva Seguros',         'logo' => 'positiva.webp'],
             ['nombre' => 'InSur — Partner of Atradius', 'logo' => 'insur-atradius.webp'],
+            
             // ['nombre' => 'prueba', 'logo' => 'xxxx.formato'],            
         ];
         foreach ($partners as $p): ?>

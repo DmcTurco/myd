@@ -16,7 +16,7 @@ if (!isset($noticias)) {
                      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
                 <span class="footer__logo-text" style="display:none;">M<strong>&D</strong></span>
             </div>
-            <p class="footer__brand-desc">Somos una empresa joven formada desde el 2015 la cual brinda asesoría integral para gestión de cartas fianzas, pólizas de caución en obras públicas y privadas, con un equipo de profesionales el cual está entrenado para lograr el éxito de la gestión.</p>
+            <p class="footer__brand-desc">Somos lideres en el mercado por 10 años brindando asesoría integral para gestión de cartas fianzas, pólizas de caución en obras públicas y privadas, con un equipo de profesionales el cual está entrenado para lograr el éxito de la gestión.</p>
         </div>
 
         <!-- Columna 2: Últimas Noticias -->
@@ -40,12 +40,20 @@ if (!isset($noticias)) {
             <h4>Contáctenos</h4>
             <ul class="footer__contact-list">
                 <li class="footer__contact-item">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-location-dot"></i> <!-- icono de location -->
                     <span><?= SITE_ADDRESS ?></span>
                 </li>
                 <li class="footer__contact-item">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-location-dot"></i> <!--  icono de location -->
+                    <span><?= SITE_ADDRESS_2 ?></span>
+                </li>
+                <li class="footer__contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
                     <span><?= SITE_PHONE ?></span>
+                </li>
+                <li class="footer__contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span><?= SITE_PHONE_2 ?></span>
                 </li>
                 <li class="footer__contact-item">
                     <i class="fas fa-envelope"></i>

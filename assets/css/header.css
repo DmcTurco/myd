@@ -23,7 +23,7 @@
     display: flex; align-items: flex-start; gap: .5rem;
     padding: 18px 20px;
 }
-.navbar__logo img { width: 200px; height: auto; }
+.navbar__logo img { width: 270px; height: auto; } /* DIMENSIONES DE LOGO EN HEADER */
 .navbar__logo-text {
     font-family: var(--font-heading); font-weight: 400; font-size: 1.4rem;
     color: var(--navy); letter-spacing: -.02em;

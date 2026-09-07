@@ -262,15 +262,16 @@
 .comp-logos { background: var(--white); }
 .comp-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;   /* celdas de 550px, como el original */
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;   /* 5 en una sola fila, dentro de los 1130px del container */
+    row-gap: 24px;   /* opcional, además del padding de .comp-cell */
 }
 .comp-cell {
     padding: 25px 0;
     text-align: center;
 }
-.comp-cell img {
-    width: 300px;
+.comp-cell img { /*dimesiones de logos */
+    width: 200px;
     height: auto;
     margin: 0 auto;
     display: block;
