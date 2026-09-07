@@ -66,3 +66,16 @@ function redirect(string $url): void {
     header('Location: ' . $url);
     exit;
 }
+
+/**
+ * Texto de la pagina actual sacado del registro (config/rutas.php).
+ * Asi el titulo grande, la bajada y demas se editan en un solo sitio.
+ *
+ *   texto_pagina('h1')       -> el titulo que se ve dentro de la pagina
+ *   texto_pagina('bajada')   -> la linea que va debajo
+ */
+function texto_pagina(string $campo, string $por_defecto = ''): string
+{
+    $clave = $GLOBALS['page'] ?? '';
+    return $GLOBALS['paginas'][$clave][$campo] ?? $por_defecto;
+}

@@ -1,7 +1,7 @@
 <!-- ===== CABECERA — foto con el titulo en caja translucida (como el original) ===== -->
 <section class="photo-hero" style="background-image:url('<?= asset('images/hero/hero-servicios.webp') ?>')">
     <div class="container photo-hero__inner">
-        <h1 class="photo-hero__title">NUESTROS SERVICIOS</h1>
+        <h1 class="photo-hero__title"><?= htmlspecialchars(texto_pagina('h1')) ?></h1>
     </div>
 </section>
 

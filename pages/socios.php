@@ -4,8 +4,8 @@
 <!-- ===== TITULO ===== -->
 <section class="socios-head">
     <div class="container">
-        <h1 class="socios-title">SOCIOS ESTRÁTEGICOS</h1>
-        <h4 class="serv-band-title serv-band-title--sentence">Trabajamos con los siguientes socios estratégicos:</h4>
+        <h1 class="socios-title"><?= htmlspecialchars(texto_pagina('h1')) ?></h1>
+        <h4 class="serv-band-title serv-band-title--sentence"><?= htmlspecialchars(texto_pagina('bajada')) ?></h4>
     </div>
 </section>
 

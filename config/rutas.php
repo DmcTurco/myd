@@ -20,6 +20,8 @@
  *   'titulo' Va delante del nombre del sitio en la pestaña.
  *            null = solo el nombre del sitio (caso de la portada).
  *   'desc'   Descripcion que muestra Google en los resultados.
+ *   'h1'     Titulo grande que se ve DENTRO de la pagina.
+ *   'bajada' Linea que va debajo de ese titulo.
  *   'submenu' Solo para Servicios: dibuja el desplegable de tres niveles.
  *
  * OJO: la CLAVE de la izquierda ('home', 'empresa', 'socios'...) es el nombre
@@ -46,6 +48,7 @@ $paginas = [
         'menu'    => 'Servicios',
         'titulo'  => 'Servicios',
         'desc'    => 'Gestión de Cartas Fianza, Pólizas de Caución, Seguros Generales y Servicios Administrativos.',
+        'h1'      => 'NUESTROS SERVICIOS',
         'submenu' => true,
     ],
 
@@ -54,6 +57,7 @@ $paginas = [
         'menu'   => 'Clientes',
         'titulo' => 'Clientes',
         'desc'   => 'Empresas que confían en M&D Asesores Financieros a nivel nacional.',
+        'h1'     => 'NUESTROS CLIENTES',
     ],
 
     'companias' => [
@@ -61,13 +65,16 @@ $paginas = [
         'menu'   => 'Compañías',
         'titulo' => 'Compañías Asociadas',
         'desc'   => 'Compañías aseguradoras y financieras con las que trabajamos.',
+        'h1'     => 'COMPAÑIAS',
     ],
 
     'socios' => [
-        'ruta'   => 'socios',
-        'menu'   => 'Socios',
-        'titulo' => 'Socios',
-        'desc'   => 'Conoce a nuestro equipo de socios y asesores.',
+        'ruta'   => 'partners',
+        'menu'   => 'Partners',
+        'titulo' => 'Partners',
+        'desc'   => 'Conoce a los partners estratégicos de M&D Asesores Financieros.',
+        'h1'     => 'PARTNERS',
+        'bajada' => 'Trabajamos con los siguientes partners:',
     ],
 
     'noticias' => [
