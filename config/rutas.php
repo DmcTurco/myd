@@ -74,7 +74,7 @@ $paginas = [
         'titulo' => 'Partners',
         'desc'   => 'Conoce a los partners estratégicos de M&D Asesores Financieros.',
         'h1'     => 'PARTNERS',
-        'bajada' => 'Trabajamos con los siguientes partners:',
+        'bajada' => 'Trabajamos con los siguientes partners:',//se quito este texto
     ],
 
     // 'noticias' => [
