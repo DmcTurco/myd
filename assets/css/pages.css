@@ -479,7 +479,12 @@
 .btn-enviar:hover { background: var(--sky); color: var(--white); }
 
 /* --- Oficinas --- */
-.contacto-oficina__item { margin-bottom: 20px; }
+.contacto-oficina__maps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
 .contacto-map { height: 220px; }
 .contacto-map iframe { width: 100%; height: 100%; border: 0; display: block; }
 

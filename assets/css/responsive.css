@@ -14,6 +14,7 @@
     .about-grid { grid-template-columns: 1fr; gap: 0; }
     .serv-why__grid, .serv-cards, .clients-grid, .comp-grid { grid-template-columns: 1fr; }
     .contacto-grid { grid-template-columns: 1fr; }
+    .contacto-oficina__maps { grid-template-columns: 1fr; gap: 15px; }
     .page-title { padding: 30px 0 40px; }
     .page-title h1 { font-size: 26px; line-height: 30px; }
     .contacto-datos span { font-size: 18px; line-height: 22px; }

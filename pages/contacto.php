@@ -73,34 +73,36 @@
         <div class="contacto-oficina">
             <div class="headline-wrap"><h4 class="headline-line">Nuestras oficinas</h4></div>
 
-            <!-- Oficina Lima -->
-            <div class="contacto-oficina__item">
-                <div class="contacto-map">
-                    <iframe src="https://www.google.com/maps?q=-12.126175,-77.019684&amp;z=16&amp;output=embed"
-                            title="Ubicación oficina Lima - M&D Asesoria Financiera"
-                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacto-oficina__maps">
+                <!-- Oficina Lima -->
+                <div class="contacto-oficina__item">
+                    <div class="contacto-map">
+                        <iframe src="https://www.google.com/maps?q=-12.126175,-77.019684&amp;z=16&amp;output=embed"
+                                title="Ubicación oficina Lima - M&D Asesoria Financiera"
+                                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <ul class="contacto-datos">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><?= SITE_ADDRESS ?></span>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="contacto-datos">
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span><?= SITE_ADDRESS ?></span>
-                    </li>
-                </ul>
-            </div>
 
-            <!-- Oficina Piura -->
-            <div class="contacto-oficina__item">
-                <div class="contacto-map">
-                    <iframe src="https://www.google.com/maps?q=<?= urlencode(SITE_ADDRESS_2 . ', Perú') ?>&amp;z=16&amp;output=embed"
-                            title="Ubicación oficina Piura - M&D Asesoria Financiera"
-                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Oficina Piura -->
+                <div class="contacto-oficina__item">
+                    <div class="contacto-map">
+                        <iframe src="https://www.google.com/maps?q=<?= urlencode(SITE_ADDRESS_2 . ', Perú') ?>&amp;z=16&amp;output=embed"
+                                title="Ubicación oficina Piura - M&D Asesoria Financiera"
+                                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <ul class="contacto-datos">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><?= SITE_ADDRESS_2 ?></span>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="contacto-datos">
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span><?= SITE_ADDRESS_2 ?></span>
-                    </li>
-                </ul>
             </div>
 
             <ul class="contacto-datos">
