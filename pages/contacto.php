@@ -74,17 +74,23 @@
             <div class="headline-wrap"><h4 class="headline-line">Nuestra oficina</h4></div>
 
             <div class="contacto-map">
-                <iframe src="https://www.google.com/maps?q=-12.126175,-77.019684&amp;z=16&amp;output=embed"
+                <iframe id="contacto-map-frame"
+                        src="https://www.google.com/maps?q=-12.126175,-77.019684&amp;z=16&amp;output=embed"
                         title="Ubicación de M&D Asesoria Financiera"
                         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
+            <!-- Al hacer clic en una direccion, JS (initContactoMap en
+                 assets/js/contacto-map.js) cambia el iframe de arriba a
+                 la ubicacion de ese data-map. -->
             <ul class="contacto-datos">
-                <li>
+                <li class="contacto-datos__direccion contacto-datos__direccion--active"
+                    data-map="-12.126175,-77.019684" tabindex="0" role="button">
                     <i class="fas fa-map-marker-alt"></i>
                     <span><?= SITE_ADDRESS ?></span>
                 </li>
-                <li>
+                <li class="contacto-datos__direccion"
+                    data-map="<?= urlencode(SITE_ADDRESS_2 . ', Perú') ?>" tabindex="0" role="button">
                     <i class="fas fa-map-marker-alt"></i>
                     <span><?= SITE_ADDRESS_2 ?></span>
                 </li>

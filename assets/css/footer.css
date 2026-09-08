@@ -1,5 +1,5 @@
 /* =============================================
-   FOOTER — 3 columnas estilo mydsac.com
+   FOOTER — 2 columnas: logo centrado | contáctenos más ancho
    ============================================= */
 /* Original: seccion con padding 40px 0 + caja interior con padding 25px,
    y barra de copyright de 71px. */
@@ -8,34 +8,28 @@
     color: rgba(255,255,255,.8);
     padding: 65px 0 0;
 }
-/* Original: 3 columnas iguales de 357px de contenido con 30px de canal. */
+/* Logo angosto (1 parte) + contáctenos ancho (2 partes), para no dejar
+   campo suelto como con las 3 columnas parejas del original. */
 .footer__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 30px;
+    align-items: center;
 }
 
 /* Logo col */
-.footer__brand-title {
-    font-family: var(--font-heading);
-    font-size: 1.0625rem; font-weight: 300;
-    color: var(--white);
-    margin-bottom: 14px;
-    display: block;
-    text-transform: none;
-    letter-spacing: normal;
+.footer__logo-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer__logo { margin-bottom: 16px; }
+.footer__logo { margin-bottom: 0; }
 .footer__logo img { max-height: 56px; filter: brightness(0) invert(1); }
 .footer__logo-text {
     font-family: var(--font-heading); font-size: 1.6rem;
     color: var(--white); letter-spacing: -.02em;
 }
 .footer__logo-text strong { color: var(--sky); }
-.footer__brand-desc {
-    font-size: 14px; color: rgba(255,255,255,.7);
-    line-height: 20px; margin-bottom: 0;
-}
 
 /* Columns */
 .footer__col {
@@ -89,6 +83,7 @@
 .footer__contact-item i { color: var(--white); flex-shrink: 0; margin-top: 3px; font-size: 14px; }
 .footer__contact-item a { color: rgba(255,255,255,.75); transition: var(--transition); }
 .footer__contact-item a:hover { color: var(--sky); }
+.footer__sep { opacity: .4; margin: 0 2px; }
 
 .footer__bottom {
     margin-top: 65px;

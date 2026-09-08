@@ -8,4 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroSlider();
     initCompaniesCarousel();
     initFormValidation();
+    initContactoMap();
 });

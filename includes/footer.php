@@ -4,19 +4,17 @@ if (!isset($noticias)) {
     require_once __DIR__ . '/../data/noticias.php';
 }
 ?>
-<!-- ===== FOOTER — 3 columnas estilo mydsac.com ===== -->
+<!-- ===== FOOTER — 2 columnas: logo centrado | contáctenos más ancho ===== -->
 <footer class="footer">
     <div class="container footer__grid">
 
-        <!-- Columna 1: Marca y logo -->
-        <div>
-            <span class="footer__brand-title">M&amp;D Asesoria Financiera</span>
+        <!-- Columna 1: Logo centrado -->
+        <div class="footer__logo-col">
             <div class="footer__logo">
                 <img src="<?= asset('images/logo-white.webp') ?>" alt="M&D Asesoría Financiera"
                      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
                 <span class="footer__logo-text" style="display:none;">M<strong>&D</strong></span>
             </div>
-            <p class="footer__brand-desc">Somos lideres en el mercado por 10 años brindando asesoría integral para gestión de cartas fianzas, pólizas de caución en obras públicas y privadas, con un equipo de profesionales el cual está entrenado para lograr el éxito de la gestión.</p>
         </div>
 
         <!-- Columna 2: Últimas Noticias -->
@@ -41,19 +39,15 @@ if (!isset($noticias)) {
             <ul class="footer__contact-list">
                 <li class="footer__contact-item">
                     <i class="fas fa-location-dot"></i> <!-- icono de location -->
-                    <span><?= SITE_ADDRESS ?></span>
-                </li>
-                <li class="footer__contact-item">
-                    <i class="fas fa-location-dot"></i> <!--  icono de location -->
-                    <span><?= SITE_ADDRESS_2 ?></span>
+                    <span><?= SITE_ADDRESS ?> <span class="footer__sep">|</span> <?= SITE_ADDRESS_2 ?></span>
                 </li>
                 <li class="footer__contact-item">
                     <i class="fa-brands fa-whatsapp"></i>
-                    <span><?= SITE_PHONE ?></span>
-                </li>
-                <li class="footer__contact-item">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span><?= SITE_PHONE_2 ?></span>
+                    <span>
+                        <a href="https://wa.me/<?= preg_replace('/[^0-9]/', '', SITE_PHONE) ?>" target="_blank" rel="noopener"><?= SITE_PHONE ?></a>
+                        <span class="footer__sep">|</span>
+                        <a href="https://wa.me/<?= preg_replace('/[^0-9]/', '', SITE_PHONE_2) ?>" target="_blank" rel="noopener"><?= SITE_PHONE_2 ?></a>
+                    </span>
                 </li>
                 <li class="footer__contact-item">
                     <i class="fas fa-envelope"></i>
@@ -79,6 +73,7 @@ if (!isset($noticias)) {
 <script src="<?= asset_v('js/hero-slider.js') ?>"></script>
 <script src="<?= asset_v('js/companies-carousel.js') ?>"></script>
 <script src="<?= asset_v('js/form-validation.js') ?>"></script>
+<script src="<?= asset_v('js/contacto-map.js') ?>"></script>
 <script src="<?= asset_v('js/main.js') ?>"></script>
 </body>
 </html>

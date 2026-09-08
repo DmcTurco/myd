@@ -40,7 +40,7 @@ function parseHomeDate(string $fecha): array {
 
         <div class="hero-v2__slide hero-v2__slide--active" style="background-image:url('<?= asset('images/hero/inicio-1.webp') ?>')">
             <div class="hero-v2__text-box">
-                <p>Experiencia, Calidad y Compromiso a la medida de las necesidades de nuestros clientes.</p>
+                <p>Experiencia, Calidad y Compromiso a la medida de las necesidades de nuestros clientes</p>
             </div>
         </div>
 
@@ -52,13 +52,13 @@ function parseHomeDate(string $fecha): array {
 
         <div class="hero-v2__slide" data-bg="<?= asset('images/hero/inicio-3.webp') ?>">
             <div class="hero-v2__text-box">
-                <p>Cartas Fianza, Seguros de Caución y Seguros Generales</p>
+                <p>Cartas Fianza y Seguros de Caución</p>
             </div>
         </div>
 
         <div class="hero-v2__slide" data-bg="<?= asset('images/hero/inicio-4.webp') ?>">
             <div class="hero-v2__text-box">
-                <p>Trabajamos&nbsp; de manera personalizada</p>
+                <p>Trabajamos de manera personalizada</p>
             </div>
         </div>
 
@@ -70,7 +70,7 @@ function parseHomeDate(string $fecha): array {
 
         <div class="hero-v2__slide" data-bg="<?= asset('images/hero/inicio-6.webp') ?>">
             <div class="hero-v2__text-box">
-                <p>Tener un buen respaldo es nuestra mejor garantía.</p>
+                <p>Tener un buen respaldo es nuestra mejor garantía</p>
             </div>
         </div>
 
@@ -94,7 +94,7 @@ function parseHomeDate(string $fecha): array {
      ================================================================ -->
 <div class="cta-strip">
     <div class="container cta-strip__inner">
-        <p>ASESORÍA ESPECIALIZADA&nbsp; EN GESTIÓN DE FIANZAS, PÓLIZAS DE CAUCIÓN PARA OBRAS PÚBLICAS&nbsp;, PRIVADAS Y SEGUROS GENERALES</p>
+        <p>ASESORÍA ESPECIALIZADA  EN GESTIÓN DE FIANZAS, PÓLIZAS DE CAUCIÓN PARA OBRAS PÚBLICAS, PRIVADAS</p>
         <a href="<?= page_url('contacto') ?>" class="cta-strip__btn">
             <i class="fas fa-phone"></i> CONTÁCTENOS
         </a>
@@ -110,19 +110,19 @@ function parseHomeDate(string $fecha): array {
         <div class="services-icons__grid">
             <div class="services-icons__item">
                 <i class="fas fa-pencil-alt"></i>
-                <p>Gestión para apertura y aumento de línea de crédito para las cartas fianzas y/o pólizas de caucion para obras, servicios o suministros públicos y privados.</p>
+                <p>Gestión para apertura y aumento de línea de crédito para las cartas fianzas y/o pólizas de caucion para obras, servicios o suministros públicos y privados</p>
             </div>
             <div class="services-icons__item">
                 <i class="fas fa-file-alt"></i>
-                <p>Garantizamos la aprobacion de sus cartas fianza en tiempo reducido</p>
+                <p>Garantizamos la aprobación de sus cartas fianza en tiempo reducido</p>
             </div>
             <div class="services-icons__item">
                 <i class="fas fa-paperclip"></i>
-                <p>Rapidez y confiabilidad en la preaprobacion de lineas fianzas</p>
+                <p>Rapidez y confiabilidad en la preaprobación de líneas de fianza</p>
             </div>
             <div class="services-icons__item">
                 <i class="fas fa-paperclip"></i>
-                <p>Apertura de lineas de fianzas en las principales compañias de seguros y el crecimiento de las mismas a corto plazo</p>
+                <p>Apertura de líneas de fianza en las principales compañías de seguros y crecimiento de las mismas a corto plazo</p>
             </div>
         </div>
     </div>

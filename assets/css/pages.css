@@ -509,6 +509,21 @@
 .contacto-datos a { color: inherit; }
 .contacto-datos a:hover { color: var(--sky); }
 
+/* Direcciones clicables: seleccionan la oficina que se ve en el mapa */
+.contacto-datos__direccion {
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background .2s, color .2s;
+}
+.contacto-datos__direccion:hover,
+.contacto-datos__direccion--active {
+    background: rgba(80, 173, 239, .08);
+}
+.contacto-datos__direccion--active i,
+.contacto-datos__direccion--active span {
+    color: var(--sky-dark);
+}
+
 /* =============================================
    SUBCABECERA DE NOTICIAS — medidas de mydsac.com/noticias
      banda de 196px sobre el gris del body:
