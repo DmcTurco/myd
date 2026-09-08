@@ -6,13 +6,13 @@
 .footer {
     background: #084672;
     color: rgba(255,255,255,.8);
-    padding: 65px 0 0;
+    padding: 15px 0 0;
 }
 /* Logo angosto (1 parte) + contáctenos ancho (2 partes), para no dejar
    campo suelto como con las 3 columnas parejas del original. */
 .footer__grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
     gap: 30px;
     align-items: center;
 }
@@ -86,7 +86,7 @@
 .footer__sep { opacity: .4; margin: 0 2px; }
 
 .footer__bottom {
-    margin-top: 65px;
+    margin-top: 15px;
     border-top: 1px solid rgba(255,255,255,.1);
     padding: 25px 0;
     text-align: center;
