@@ -33,7 +33,7 @@ $paginas = [
         'ruta'   => '',
         'menu'   => 'Inicio',
         'titulo' => null,
-        'desc'   => 'M&D Asesores Financieros - Especialistas en Cartas Fianza, Pólizas de Caución y Seguros en Lima, Perú.',
+        'desc'   => 'M&D Asesoria Financiera - Especialistas en Cartas Fianza, Pólizas de Caución y Seguros en Lima, Perú.',
     ],
 
     'empresa' => [
