@@ -107,12 +107,12 @@
 
             <ul class="contacto-datos">
                 <li>
-                    <i class="fas fa-phone"></i>
-                    <span><a href="tel:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE) ?>"><?= SITE_PHONE ?></a></span>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span><a href="https://api.whatsapp.com/send/?phone=51981535709&text=Hola&type=phone_number&app_absent=0:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE) ?>"><?= SITE_PHONE ?></a></span>
                 </li>
                 <li>
-                    <i class="fas fa-phone"></i>
-                    <span><a href="tel:<?= preg_replace('/[^0-9+]/', '', SITE_PHONE_2) ?>"><?= SITE_PHONE_2 ?></a></span>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span><a href="https://api.whatsapp.com/send/?phone=51959434748&text=Hola&type=phone_number&app_absent=0<?= preg_replace('/[^0-9+]/', '', SITE_PHONE_2) ?>"><?= SITE_PHONE_2 ?></a></span>
                 </li>
                 <li>
                     <i class="far fa-envelope"></i>
