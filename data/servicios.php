@@ -27,14 +27,18 @@ $servicios_paginas = [
             [ 'ancho' => 'fullwidth', 'efecto' => 'parallax', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
                     [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-3', 'txt' => 'SOLUCIONES INTEGRALES EN HERRAMIENTAS FINANCIERAS' ],
-                    [ 't' => 'texto', 'html' => 'Ofrecemos las mejores cotizaciones con las tasas más atractivas en diversos tipos de seguros con las compañías de seguros más importantes del país.' ],
+                    //<!-- texto antiguo por texto nuevo
+                    // Ofrecemos las mejores cotizaciones con las tasas más atractivas en diversos tipos de seguros con las compañías de seguros más importantes del país.
+                    [ 't' => 'texto', 'html' => 'Ofrecemos las mejores cotizaciones con las tasas más atractivas en diversos tipos de seguros, trabajando de la mano con las compañías de seguros más importantes del país' ],
+                    
                 ] ],
             ] ],
             [ 'ancho' => 'fullwidth', 'grid' => true, 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/2' ],
                 [ 'w' => '1/2', 'items' => [
-                    [ 't' => 'heading', 'size' => 'h4', 'estilo' => 'style-1', 'txt' => 'Tipos de Seguro:' ],
-                    [ 't' => 'texto', 'html' => '<ul> <li>Seriedad de Oferta</li> <li>Fiel Cumplimiento de Contrato</li> <li>Adelanto Directo y Adelanto de Materiales</li> <li>Cartas de Acreditacion</li> </ul>' ],
+                    //<!-- texto antiguo por texto nuevo---Tipos de Seguro:
+                    [ 't' => 'heading', 'size' => 'h4', 'estilo' => 'style-1', 'txt' => 'Tipos de coberturas y garantías:' ],
+                    [ 't' => 'texto', 'html' => '<ul> <li>Seriedad de Oferta</li> <li>Fiel Cumplimiento de Contrato</li> <li>Adelanto Directo y Adelanto de Materiales</li> <li>Cartas de acreditación</li> </ul>' ],
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
@@ -63,12 +67,12 @@ $servicios_paginas = [
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '308.webp', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
-                    [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'punchline' => 'Nuestros Servicios', 'txt' => 'Gestión para apertura y aumento de línea de crédito para las cartas fianzas' ],
+                    [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'punchline' => 'Nuestros Servicios', 'txt' => 'Gestión para la apertura y el aumento de líneas de crédito para cartas fianza' ],//texto antiguo: Gestión para apertura y aumento de línea de crédito para las cartas fianza
                 ] ],
             ] ],
             [ 'ancho' => 'fullwidth', 'bordes' => 'bottom', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
-                    [ 't' => 'texto', 'html' => 'Respaldamos la apertura y el aumento de la línea de crédito para las cartas fianzas para afianzar las obras públicas y privadas.' ],
+                    [ 't' => 'texto', 'html' => 'Respaldamos la apertura y el aumento de líneas de crédito para cartas fianza, orientadas a afianzar obras públicas y privadas' ],//texto antiguo: Respaldamos la apertura y el aumento de la línea de crédito para las cartas fianzas para afianzar las obras públicas y privadas
                 ] ],
             ] ],
             [ 'ancho' => 'fullwidth', 'grid' => true, 'efecto' => 'classic', 'cols' => [
@@ -77,7 +81,7 @@ $servicios_paginas = [
                 ] ],
                 [ 'w' => '1/2', 'items' => [
                     [ 't' => 'heading', 'size' => 'h4', 'estilo' => 'style-1', 'txt' => 'Beneficios:' ],
-                    [ 't' => 'texto', 'html' => '<ul> <li>Garantizamos la aprobacion de sus cartas fianzas</li> <li>Rapidez y Confiabilidad en la pre-aprobacion de lineas de fianza</li> <li>Crecimiento de la línea fianza a corto plazo</li> <li>Menores exigencias con respecto a la banca.</li> <li>Libera tu línea bancaria, mejora tu capacidad financiera.</li> <li>Menores exigencias con respecto a la banca</li> </ul>' ],
+                    [ 't' => 'texto', 'html' => '<ul> <li>Garantizamos la aprobación de sus cartas fianza</li> <li>Rapidez y confiabilidad en la preaprobación de líneas de fianza</li> <li>Crecimiento de la línea de fianza a corto plazo</li> <li>Exigencias más flexibles que en el sistema bancario</li> <li>Libera tu línea bancaria y mejora tu capacidad financiera</li> </ul>' ],//texto antiguo: Garantizamos la aprobacion de sus cartas fianzas</li> <li>Rapidez y Confiabilidad en la pre-aprobacion de lineas de fianza</li> <li>Crecimiento de la línea fianza a corto plazo</li> <li>Menores exigencias con respecto a la banca.</li> <li>Libera tu línea bancaria, mejora tu capacidad financiera.</li> <li>Menores exigencias con respecto a la banca
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
@@ -88,19 +92,19 @@ $servicios_paginas = [
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/6' ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania1.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente4.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente1.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania5_2.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania6_2.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
             ] ],
         ],
@@ -111,12 +115,12 @@ $servicios_paginas = [
         'filas'     => [
             [ 'ancho' => 'fullwidth', 'bg' => '14851.webp', 'bgpos' => 'right top', 'pt' => 100, 'pb' => 140, 'efecto' => 'parallax', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
-                    [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => 'Gestión de Cartas Fianzas para Obras Públicas y Privadas' ],
+                    [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-4', 'txt' => 'Gestión de cartas fianza para obras públicas y privadas' ],
                 ] ],
             ] ],
             [ 'ancho' => 'fullwidth', 'bordes' => 'bottom', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
-                    [ 't' => 'texto', 'html' => 'Garantizamos la gestión de las cartas fianzas de seriedad de oferta, fiel cumplimiento, adelanto directo, adelanto de materiales, correcto uso de anticipos en obras públicas y privadas: <ul> <li>+ Rápido</li> <li>+ Simple</li> <li>+ Personalizado</li> </ul>' ],
+                    [ 't' => 'texto', 'html' => 'Garantizamos la gestión de cartas fianza de seriedad de oferta, fiel cumplimiento, adelanto directo, adelanto de materiales y correcto uso de anticipos para obras públicas y privadas: <ul> <li>Rápida</li> <li>Simple</li> <li>Personalizada</li> </ul>' ],//texto antiguo: Gadzamos la gestión de las cartas fianzas de seriedad de oferta, fiel cumplimiento, adelanto directo, adelanto de materiales, correcto uso de anticipos en obras públicas y privadas:
                 ] ],
             ] ],
             [ 'ancho' => 'fullwidth', 'grid' => true, 'efecto' => 'classic', 'cols' => [
@@ -125,7 +129,7 @@ $servicios_paginas = [
                 ] ],
                 [ 'w' => '1/2', 'items' => [
                     [ 't' => 'heading', 'size' => 'h4', 'estilo' => 'style-1', 'txt' => 'Beneficios:' ],
-                    [ 't' => 'texto', 'html' => '<ul> <li>Menores exigencias con respecto a la banca.</li> <li>Abanico de alternativas con diversas compañías de seguros y financieras autorizadas por la SBS.</li> <li>Agilidad en el proceso de obtención de cartas fianzas.</li> <li>Libera tu línea bancaria, mejora tu capacidad financiera.</li> <li>Menores exigencias con respecto a la banca</li> <li>Ofrecemos las garantías más atractivas del mercado.</li> <li>Asesoría integral en cartas fianzas desde antes que comience tu obra hasta el término de esta.</li> </ul>' ],
+                    [ 't' => 'texto', 'html' => '<ul> <li>Menores exigencias en comparación con el sistema bancario</li> <li>Abanico de alternativas con diversas compañías de seguros y entidades financieras autorizadas por la SBS</li> <li>Agilidad en el proceso de obtención de cartas fianza</li> <li>Libera tu línea bancaria y mejora tu capacidad financiera</li> <li>Ofrecemos las garantías más atractivas del mercado</li> <li>Asesoría integral en cartas fianza, desde antes de iniciar tu obra hasta su culminación</li> </ul>' ],//<li>Menores exigencias con respecto a la banca.</li> <li>Abanico de alternativas con diversas compañías de seguros y financieras autorizadas por la SBS.</li> <li>Agilidad en el proceso de obtención de cartas fianzas.</li> <li>Libera tu línea bancaria, mejora tu capacidad financiera.</li> <li>Menores exigencias con respecto a la banca</li> <li>Ofrecemos las garantías más atractivas del mercado.</li> <li>Asesoría integral en cartas fianzas desde antes que comience tu obra hasta el término de esta.</li>
                 ] ],
             ] ],
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
