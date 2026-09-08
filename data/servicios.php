@@ -26,7 +26,7 @@ $servicios_paginas = [
             ] ],
             [ 'ancho' => 'fullwidth', 'efecto' => 'parallax', 'cols' => [
                 [ 'w' => '1/1', 'items' => [
-                    [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-3', 'txt' => 'SOLUCIONES INTEGRALES EN HERRAMIENTAS FINANCIERAS Y SEGUROS' ],
+                    [ 't' => 'heading', 'size' => 'h1', 'estilo' => 'style-3', 'txt' => 'SOLUCIONES INTEGRALES EN HERRAMIENTAS FINANCIERAS' ],
                     [ 't' => 'texto', 'html' => 'Ofrecemos las mejores cotizaciones con las tasas más atractivas en diversos tipos de seguros con las compañías de seguros más importantes del país.' ],
                 ] ],
             ] ],
@@ -40,19 +40,19 @@ $servicios_paginas = [
             [ 'ancho' => 'default', 'efecto' => 'classic', 'cols' => [
                 [ 'w' => '1/6' ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania1.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente4.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'cliente1.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania5_2.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
                 [ 'w' => '1/6', 'items' => [
-                    [ 't' => 'imagen', 'src' => 'Compania6_2.webp' ],
+                    [ 't' => 'imagen', 'src' => 'blank.webp' ],
                 ] ],
             ] ],
         ],
