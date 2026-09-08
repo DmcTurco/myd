@@ -8,14 +8,14 @@
 <!-- ===== INTRO ===== -->
 <section class="comp-intro">
     <div class="container">
-        <p class="page-text">Tener un buen respaldo es nuestra mejor garantía. Contamos con el respaldo de 3 prestigiosas compañías de seguros, 1 fundación para fomento para la pequeña y micro empresa y 1 reaseguradora internacional con las más elevada clasificación de riesgo que confían en nuestra experiencia y estabilidad. Todas avaladas y autorizadas por la SBS para la emisión de las cartas fianzas.</p>
+        <!-- <p class="page-text">Tener un buen respaldo es nuestra mejor garantía. Contamos con el respaldo de 3 prestigiosas compañías de seguros, 1 fundación para fomento para la pequeña y micro empresa y 1 reaseguradora internacional con las más elevada clasificación de riesgo que confían en nuestra experiencia y estabilidad. Todas avaladas y autorizadas por la SBS para la emisión de las cartas fianzas.</p> -->
     </div>
 </section>
 
 <!-- ===== PARTNERS DIRECTOS ===== -->
 <section class="comp-heading">
     <div class="container">
-        <h4 class="page-subtitle page-subtitle--plain">Principales Partners Directos</h4>
+        <h4 class="page-subtitle page-subtitle--plain">Compañías de seguros con las que trabajamos:</h4>
     </div>
 </section>
 
