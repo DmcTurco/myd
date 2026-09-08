@@ -9,10 +9,11 @@ $menu_servicios = [
         'titulo' => 'HERRAMIENTAS FINANCIERAS',
         'hijos'  => [
             [   'slug' => 'linea-credito',        
-                'titulo' => 'Gestión para Apertura y Aumento de Línea de Crédito para las Cartas Fianzas'
+                'titulo' => 'Gestión para la apertura y el aumento de líneas de crédito para cartas fianza'
             ],
             [   'slug' => 'cartas-fianzas-obras', 
-                'titulo' => 'Gestión de Cartas Fianzas para Obras Públicas y Privadas'
+                'titulo' => 'Gestión de cartas fianza para obras públicas y privadas
+'
             ],
                         
         ],
