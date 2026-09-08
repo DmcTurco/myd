@@ -73,7 +73,6 @@ if (!isset($noticias)) {
 <script src="<?= asset_v('js/hero-slider.js') ?>"></script>
 <script src="<?= asset_v('js/companies-carousel.js') ?>"></script>
 <script src="<?= asset_v('js/form-validation.js') ?>"></script>
-<script src="<?= asset_v('js/contacto-map.js') ?>"></script>
 <script src="<?= asset_v('js/main.js') ?>"></script>
 </body>
 </html>

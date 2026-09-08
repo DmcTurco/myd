@@ -478,8 +478,9 @@
 }
 .btn-enviar:hover { background: var(--sky); color: var(--white); }
 
-/* --- Oficina --- */
-.contacto-map { height: 350px; }
+/* --- Oficinas --- */
+.contacto-oficina__item { margin-bottom: 20px; }
+.contacto-map { height: 220px; }
 .contacto-map iframe { width: 100%; height: 100%; border: 0; display: block; }
 
 .contacto-datos { margin-top: 15px; }
@@ -508,21 +509,6 @@
 }
 .contacto-datos a { color: inherit; }
 .contacto-datos a:hover { color: var(--sky); }
-
-/* Direcciones clicables: seleccionan la oficina que se ve en el mapa */
-.contacto-datos__direccion {
-    cursor: pointer;
-    border-radius: 6px;
-    transition: background .2s, color .2s;
-}
-.contacto-datos__direccion:hover,
-.contacto-datos__direccion--active {
-    background: rgba(80, 173, 239, .08);
-}
-.contacto-datos__direccion--active i,
-.contacto-datos__direccion--active span {
-    color: var(--sky-dark);
-}
 
 /* =============================================
    SUBCABECERA DE NOTICIAS — medidas de mydsac.com/noticias
