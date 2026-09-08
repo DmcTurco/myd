@@ -120,10 +120,12 @@
     position: relative;
     display: flex; flex-direction: column;
 }
+/* Eaca se modifica el tamaño del carousel que aparece en home */
+
 .comp-carousel__track { width: 100%; }
 .comp-carousel__slide {
     display: none;
-    width: 100%;
+    width: 80%;
     aspect-ratio: 2 / 1;
     background: var(--white);
     border: 1px solid #e1e1e1;

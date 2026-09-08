@@ -39,7 +39,11 @@ if (!isset($noticias)) {
             <ul class="footer__contact-list">
                 <li class="footer__contact-item">
                     <i class="fas fa-location-dot"></i> <!-- icono de location -->
-                    <span><?= SITE_ADDRESS ?> <span class="footer__sep">|</span> <?= SITE_ADDRESS_2 ?></span>
+                    <span><?= SITE_ADDRESS ?> <span class="footer__sep">
+                </li>
+                <li class="footer__contact-item">
+                    <i class="fas fa-location-dot"></i> <!-- icono de location -->
+                    <span><?= SITE_ADDRESS_2 ?> <span class="footer__sep">
                 </li>
                 <li class="footer__contact-item">
                     <i class="fa-brands fa-whatsapp"></i>
